@@ -13,4 +13,5 @@ or any other game: W-Rally reads RBR's files in place from a player's own instal
 
 ## Licence
 
-[CC BY-NC 4.0](LICENSE.txt): share and adapt with attribution, for noncommercial purposes only.
+[CC BY-NC 4.0](LICENSE.txt): share and adapt with attribution, for noncommercial purposes only. Except third-party
+material, under its own licence as its folder's CREDITS.md says (`video/menu.mp4`: free stock clips).
