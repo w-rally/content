@@ -8,8 +8,15 @@ or any other game: W-Rally reads RBR's files in place from a player's own instal
 
 ## Layout
 
-- `cars/<id>.ini` - W-Rally's values on top of a car's physics data
-- `stages/`, `cars/<id>/`, `audio/`, `video/` - as the game's design describes them (docs/design.md 6.1 in w-rally)
+W-Rally's layer of the game's content (docs/content-layers.md in w-rally): every item in a folder of its own, per
+version.
+
+- `tracks/<id>/<version>/`, `cars/<id>/<version>/`, `cars/<id>/physics/<variant>/<version>/`,
+  `physics/<base>/<version>/` - a track, a car, a car's physics, a physics base; ids are lowercase slugs, a track's
+  `<country>_<stagename>`
+- `rbr-tracks.json` - RBR's map numbers to track ids (from the onlineracing.cz tracks table, w-rally
+  tools/rbr-tracks)
+- `video/` - the main menu's video loop
 
 ## Licence
 
