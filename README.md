@@ -14,7 +14,7 @@ version.
 - `tracks/<id>/<version>/`, `cars/<id>/<version>/`, `cars/<id>/physics/<variant>/<version>/`,
   `physics/<base>/<version>/` - a track, a car, a car's physics, a physics base; ids are lowercase slugs, a track's
   `<country>_<stagename>`
-- `rbr-tracks.json` - RBR's map numbers to track ids (from the onlineracing.cz tracks table, w-rally
+- `rbr-tracks.yaml` - RBR's map numbers to track ids (from the onlineracing.cz tracks table, w-rally
   tools/rbr-tracks)
 - `video/` - the main menu's video loop
 
