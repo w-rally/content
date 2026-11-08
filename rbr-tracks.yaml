@@ -2465,3 +2465,5 @@ es_legazpi_gabiria_winter:
     name: "Legazpi-Gabiria Winter"
     length_km: 6.5
     surface: tarmac
+# RBR maps that are no stage to drive: 4 RBR's main menu backdrop
+not_stages: [4]
