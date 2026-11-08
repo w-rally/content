@@ -1,594 +1,2467 @@
-# W-Rally track id (<country>_<place>): its stages, RBR map number: stage id - tools/rbr-tracks/make_table.py
-# RBR's reversed stages are stages of the same track (docs/content-layers.md 3).
+# W-Rally tracks (<country>_<place>): a name, a country, and its stages - each an RBR map number with its stage
+# id, name, length and surface. RBR's reversed stages are stages of the same track (docs/content-layers.md 3).
+# Written by tools/rbr-tracks/make_table.py from the onlineracing.cz tracks table.
 fi_kaihuavaara:
-  10: kaihuavaara
-  14: kaihuavaara_ii
+  name: "Kaihuavaara"
+  country: "Finland"
+  10:
+    id: kaihuavaara
+    name: "Kaihuavaara"
+    length_km: 6.1
+    surface: snow
+  14:
+    id: kaihuavaara_ii
+    name: "Kaihuavaara II"
+    length_km: 6.1
+    surface: snow
 fi_mustaselka:
-  11: mustaselka
-  15: mustaselka_ii
+  name: "Mustaselka"
+  country: "Finland"
+  11:
+    id: mustaselka
+    name: "Mustaselka"
+    length_km: 7.9
+    surface: snow
+  15:
+    id: mustaselka_ii
+    name: "Mustaselka II"
+    length_km: 7.7
+    surface: snow
 fi_sikakama:
-  12: sikakama
-  16: sikakama_ii
+  name: "Sikakama"
+  country: "Finland"
+  12:
+    id: sikakama
+    name: "Sikakama"
+    length_km: 10.2
+    surface: snow
+  16:
+    id: sikakama_ii
+    name: "Sikakama II"
+    length_km: 10.2
+    surface: snow
 fi_autiovaara:
-  13: autiovaara
-  17: autiovaara_ii
+  name: "Autiovaara"
+  country: "Finland"
+  13:
+    id: autiovaara
+    name: "Autiovaara"
+    length_km: 6.1
+    surface: snow
+  17:
+    id: autiovaara_ii
+    name: "Autiovaara II"
+    length_km: 6.1
+    surface: snow
 gb_harwood_forest:
-  20: harwood_forest
-  24: harwood_forest_ii
+  name: "Harwood Forest"
+  country: "Great Britain"
+  20:
+    id: harwood_forest
+    name: "Harwood Forest"
+    length_km: 6.1
+    surface: gravel
+  24:
+    id: harwood_forest_ii
+    name: "Harwood Forest II"
+    length_km: 5.9
+    surface: gravel
 gb_falstone:
-  21: falstone
-  26: falstone_ii
+  name: "Falstone"
+  country: "Great Britain"
+  21:
+    id: falstone
+    name: "Falstone"
+    length_km: 6.6
+    surface: gravel
+  26:
+    id: falstone_ii
+    name: "Falstone II"
+    length_km: 6.6
+    surface: gravel
 gb_chirdonhead:
-  22: chirdonhead
-  25: chirdonhead_ii
+  name: "Chirdonhead"
+  country: "Great Britain"
+  22:
+    id: chirdonhead
+    name: "Chirdonhead"
+    length_km: 7
+    surface: gravel
+  25:
+    id: chirdonhead_ii
+    name: "Chirdonhead II"
+    length_km: 6.9
+    surface: gravel
 gb_shepherds_shield:
-  23: shepherds_shield
-  27: shepherds_shield_ii
+  name: "Shepherds Shield"
+  country: "Great Britain"
+  23:
+    id: shepherds_shield
+    name: "Shepherds Shield"
+    length_km: 4.8
+    surface: gravel
+  27:
+    id: shepherds_shield_ii
+    name: "Shepherds Shield II"
+    length_km: 4.9
+    surface: gravel
 au_greenhills:
-  32: greenhills
-  30: greenhills_ii
+  name: "Greenhills"
+  country: "Australia"
+  32:
+    id: greenhills
+    name: "Greenhills"
+    length_km: 6
+    surface: gravel
+  30:
+    id: greenhills_ii
+    name: "Greenhills II"
+    length_km: 6
+    surface: gravel
 au_new_bobs:
-  31: new_bobs
-  35: new_bobs_ii
+  name: "New Bobs"
+  country: "Australia"
+  31:
+    id: new_bobs
+    name: "New Bobs"
+    length_km: 10.1
+    surface: gravel
+  35:
+    id: new_bobs_ii
+    name: "New Bobs II"
+    length_km: 10
+    surface: gravel
 au_mineshaft:
-  33: mineshaft
-  37: mineshaft_ii
+  name: "Mineshaft"
+  country: "Australia"
+  33:
+    id: mineshaft
+    name: "Mineshaft"
+    length_km: 8.2
+    surface: gravel
+  37:
+    id: mineshaft_ii
+    name: "Mineshaft II"
+    length_km: 8.2
+    surface: gravel
 au_east_west:
-  34: east_west
-  36: east_west_ii
+  name: "East-West"
+  country: "Australia"
+  34:
+    id: east_west
+    name: "East-West"
+    length_km: 9.5
+    surface: gravel
+  36:
+    id: east_west_ii
+    name: "East-West II"
+    length_km: 9.6
+    surface: gravel
 fr_cote_darbroz:
-  41: cote_darbroz
-  46: cote_darbroz_ii
+  name: "Cote D'Arbroz"
+  country: "France"
+  41:
+    id: cote_darbroz
+    name: "Cote D'Arbroz"
+    length_km: 4.5
+    surface: tarmac
+  46:
+    id: cote_darbroz_ii
+    name: "Cote D'Arbroz II"
+    length_km: 4.3
+    surface: tarmac
 fr_joux_verte:
-  42: joux_verte
-  45: joux_verte_ii
+  name: "Joux Verte"
+  country: "France"
+  42:
+    id: joux_verte
+    name: "Joux Verte"
+    length_km: 7.9
+    surface: tarmac
+  45:
+    id: joux_verte_ii
+    name: "Joux Verte II"
+    length_km: 7.8
+    surface: tarmac
 fr_bisanne:
-  43: bisanne
-  47: bisanne_ii
+  name: "Bisanne"
+  country: "France"
+  43:
+    id: bisanne
+    name: "Bisanne"
+    length_km: 5.6
+    surface: tarmac
+  47:
+    id: bisanne_ii
+    name: "Bisanne II"
+    length_km: 5.6
+    surface: tarmac
 fr_joux_plane:
-  44: joux_plane
-  48: joux_plane_ii
+  name: "Joux Plane"
+  country: "France"
+  44:
+    id: joux_plane
+    name: "Joux Plane"
+    length_km: 11.1
+    surface: tarmac
+  48:
+    id: joux_plane_ii
+    name: "Joux Plane II"
+    length_km: 11.1
+    surface: tarmac
 jp_sipirkakim:
-  52: sipirkakim
-  50: sipirkakim_ii
+  name: "Sipirkakim"
+  country: "Japan"
+  52:
+    id: sipirkakim
+    name: "Sipirkakim"
+    length_km: 8.7
+    surface: gravel
+  50:
+    id: sipirkakim_ii
+    name: "Sipirkakim II"
+    length_km: 8.7
+    surface: gravel
 jp_noiker:
-  51: noiker
-  55: noiker_ii
+  name: "Noiker"
+  country: "Japan"
+  51:
+    id: noiker
+    name: "Noiker"
+    length_km: 13.8
+    surface: gravel
+  55:
+    id: noiker_ii
+    name: "Noiker II"
+    length_km: 13.7
+    surface: gravel
 jp_pirka_menoko:
-  53: pirka_menoko
-  57: pirka_menoko_ii
+  name: "Pirka Menoko"
+  country: "Japan"
+  53:
+    id: pirka_menoko
+    name: "Pirka Menoko"
+    length_km: 6.7
+    surface: gravel
+  57:
+    id: pirka_menoko_ii
+    name: "Pirka Menoko II"
+    length_km: 6.7
+    surface: gravel
 jp_tanner:
-  54: tanner
-  56: tanner_ii
+  name: "Tanner"
+  country: "Japan"
+  54:
+    id: tanner
+    name: "Tanner"
+    length_km: 3.9
+    surface: gravel
+  56:
+    id: tanner_ii
+    name: "Tanner II"
+    length_km: 4
+    surface: gravel
 us_fraizer_wells:
-  61: fraizer_wells
-  60: fraizer_wells_ii
+  name: "Fraizer Wells"
+  country: "USA"
+  61:
+    id: fraizer_wells
+    name: "Fraizer Wells"
+    length_km: 5
+    surface: gravel
+  60:
+    id: fraizer_wells_ii
+    name: "Fraizer Wells II"
+    length_km: 5
+    surface: gravel
 us_prospect_ridge:
-  62: prospect_ridge
-  65: prospect_ridge_ii
-  70: prospect_ridge_ii_a
+  name: "Prospect Ridge"
+  country: "USA"
+  62:
+    id: prospect_ridge
+    name: "Prospect Ridge"
+    length_km: 7.8
+    surface: gravel
+  65:
+    id: prospect_ridge_ii
+    name: "Prospect Ridge II"
+    length_km: 7.9
+    surface: gravel
+  70:
+    id: prospect_ridge_ii_a
+    name: "Prospect Ridge II A"
+    length_km: 7.6
+    surface: gravel
 us_diamond_creek:
-  63: diamond_creek
-  66: diamond_creek_ii
+  name: "Diamond Creek"
+  country: "USA"
+  63:
+    id: diamond_creek
+    name: "Diamond Creek"
+    length_km: 7.1
+    surface: gravel
+  66:
+    id: diamond_creek_ii
+    name: "Diamond Creek II"
+    length_km: 6.8
+    surface: gravel
 us_hualapai_nation:
-  64: hualapai_nation
-  67: hualapai_nation_ii
+  name: "Hualapai Nation"
+  country: "USA"
+  64:
+    id: hualapai_nation
+    name: "Hualapai Nation"
+    length_km: 8.6
+    surface: gravel
+  67:
+    id: hualapai_nation_ii
+    name: "Hualapai Nation II"
+    length_km: 8.6
+    surface: gravel
 xx_rally_school_stage:
-  71: rally_school_stage
-  90: rally_school_stage_ii
+  name: "Rally School Stage"
+  country: "Rally School"
+  71:
+    id: rally_school_stage
+    name: "Rally School Stage"
+    length_km: 2.2
+    surface: gravel
+  90:
+    id: rally_school_stage_ii
+    name: "Rally School Stage II"
+    length_km: 2.3
+    surface: gravel
 cz_stryckovy_okruh:
-  94: stryckovy_okruh
+  name: "Stryckovy okruh"
+  country: "Czech Republic"
+  94:
+    id: stryckovy_okruh
+    name: "Stryckovy okruh"
+    length_km: 9.2
+    surface: tarmac
 cz_sumburk_2007:
-  95: sumburk_2007
+  name: "Sumburk 2007"
+  country: "Czech Republic"
+  95:
+    id: sumburk_2007
+    name: "Sumburk 2007"
+    length_km: 12.4
+    surface: tarmac
 cz_sosnova:
-  96: sosnova
+  name: "Sosnova"
+  country: "Czech Republic"
+  96:
+    id: sosnova
+    name: "Sosnova"
+    length_km: 7.1
+    surface: tarmac
 cz_zadverice:
-  99: zadverice
-  103: zadverice_ii
+  name: "Zadverice"
+  country: "Czech Republic"
+  99:
+    id: zadverice
+    name: "Zadverice"
+    length_km: 14.9
+    surface: tarmac
+  103:
+    id: zadverice_ii
+    name: "Zadverice II"
+    length_km: 14.9
+    surface: tarmac
 cz_vinec_skalsko:
-  100: vinec_skalsko
+  name: "Vinec-Skalsko"
+  country: "Czech Republic"
+  100:
+    id: vinec_skalsko
+    name: "Vinec-Skalsko"
+    length_km: 17.8
+    surface: tarmac
 cz_vinec_skalsko_night:
-  101: vinec_skalsko_night
+  name: "Vinec-Skalsko NIGHT"
+  country: "Czech Republic"
+  101:
+    id: vinec_skalsko_night
+    name: "Vinec-Skalsko NIGHT"
+    length_km: 17.8
+    surface: tarmac
 cz_skalsko_vinec:
-  102: skalsko_vinec
+  name: "Skalsko-Vinec"
+  country: "Czech Republic"
+  102:
+    id: skalsko_vinec
+    name: "Skalsko-Vinec"
+    length_km: 18
+    surface: tarmac
 cz_sosnova_2010:
-  105: sosnova_2010
+  name: "Sosnova 2010"
+  country: "Czech Republic"
+  105:
+    id: sosnova_2010
+    name: "Sosnova 2010"
+    length_km: 4.2
+    surface: tarmac
 cz_stryckovy_zadni_porici:
-  106: stryckovy_zadni_porici
+  name: "Stryckovy - Zadni Porici"
+  country: "Czech Republic"
+  106:
+    id: stryckovy_zadni_porici
+    name: "Stryckovy - Zadni Porici"
+    length_km: 6.9
+    surface: tarmac
 nl_ptd_rallysprint:
-  107: ptd_rallysprint
+  name: "PTD Rallysprint"
+  country: "Netherlands"
+  107:
+    id: ptd_rallysprint
+    name: "PTD Rallysprint"
+    length_km: 5.1
+    surface: gravel
 cz_osli_stryckovy:
-  108: osli_stryckovy
+  name: "Osli - Stryckovy"
+  country: "Czech Republic"
+  108:
+    id: osli_stryckovy
+    name: "Osli - Stryckovy"
+    length_km: 10.6
+    surface: tarmac
 cz_dostihovka:
-  109: dostihovka
+  name: "Dostihovka"
+  country: "Czech Republic"
+  109:
+    id: dostihovka
+    name: "Dostihovka"
+    length_km: 5.7
+    surface: tarmac
 cz_dostihovka_final_stage:
-  110: dostihovka_final_stage
+  name: "Dostihovka final stage"
+  country: "Czech Republic"
+  110:
+    id: dostihovka_final_stage
+    name: "Dostihovka final stage"
+    length_km: 1.2
+    surface: tarmac
 cz_komarov:
-  111: komarov
-  112: komarov_ii
+  name: "Komarov"
+  country: "Czech Republic"
+  111:
+    id: komarov
+    name: "Komarov"
+    length_km: 7.4
+    surface: tarmac
+  112:
+    id: komarov_ii
+    name: "Komarov II"
+    length_km: 7.2
+    surface: tarmac
 cz_komarov_snow:
-  113: komarov_snow
+  name: "Komarov snow"
+  country: "Czech Republic"
+  113:
+    id: komarov_snow
+    name: "Komarov snow"
+    length_km: 7.4
+    surface: snow
 cz_komarov_ii_snow:
-  114: komarov_ii_snow
+  name: "Komarov II snow"
+  country: "Czech Republic"
+  114:
+    id: komarov_ii_snow
+    name: "Komarov II snow"
+    length_km: 7.2
+    surface: snow
 cz_koprivnice_1:
-  116: koprivnice_1
+  name: "Koprivnice 1"
+  country: "Czech Republic"
+  116:
+    id: koprivnice_1
+    name: "Koprivnice 1"
+    length_km: 2.2
+    surface: tarmac
 cz_koprivnice_2:
-  117: koprivnice_2
+  name: "Koprivnice 2"
+  country: "Czech Republic"
+  117:
+    id: koprivnice_2
+    name: "Koprivnice 2"
+    length_km: 4.2
+    surface: tarmac
 cz_koprivnice_3:
-  118: koprivnice_3
+  name: "Koprivnice 3"
+  country: "Czech Republic"
+  118:
+    id: koprivnice_3
+    name: "Koprivnice 3"
+    length_km: 5.3
+    surface: tarmac
 cz_koprivnice_4:
-  119: koprivnice_4
+  name: "Koprivnice 4"
+  country: "Czech Republic"
+  119:
+    id: koprivnice_4
+    name: "Koprivnice 4"
+    length_km: 5.4
+    surface: tarmac
 cz_fagus_lipa:
-  121: fagus_lipa
+  name: "Fagus Lipa"
+  country: "Czech Republic"
+  121:
+    id: fagus_lipa
+    name: "Fagus Lipa"
+    length_km: 6.7
+    surface: tarmac
 cz_kamenak:
-  122: kamenak
-  123: kamenak_ii
+  name: "Kamenak"
+  country: "Czech Republic"
+  122:
+    id: kamenak
+    name: "Kamenak"
+    length_km: 7.7
+    surface: tarmac
+  123:
+    id: kamenak_ii
+    name: "Kamenak II"
+    length_km: 7.7
+    surface: tarmac
 de_bergheim:
-  125: bergheim
+  name: "Bergheim v1.1"
+  country: "Germany"
+  125:
+    id: bergheim
+    name: "Bergheim v1.1"
+    length_km: 8
+    surface: tarmac
 cz_rz_banov:
-  126: rz_banov
-  127: rz_banov_ii
+  name: "RZ Banov"
+  country: "Czech Republic"
+  126:
+    id: rz_banov
+    name: "RZ Banov"
+    length_km: 3
+    surface: tarmac
+  127:
+    id: rz_banov_ii
+    name: "RZ Banov II"
+    length_km: 3
+    surface: tarmac
 cz_rz_banov_okruh:
-  128: rz_banov_okruh
+  name: "RZ Banov Okruh"
+  country: "Czech Republic"
+  128:
+    id: rz_banov_okruh
+    name: "RZ Banov Okruh"
+    length_km: 12.7
+    surface: tarmac
 cz_rz_barak:
-  129: rz_barak
+  name: "RZ Barak"
+  country: "Czech Republic"
+  129:
+    id: rz_barak
+    name: "RZ Barak"
+    length_km: 5.5
+    surface: tarmac
 cz_rz_barak_snow:
-  130: rz_barak_snow
+  name: "RZ Barak Snow"
+  country: "Czech Republic"
+  130:
+    id: rz_barak_snow
+    name: "RZ Barak Snow"
+    length_km: 3.5
+    surface: snow
 fr_lyon_gerland:
-  131: lyon_gerland
+  name: "Lyon - Gerland"
+  country: "France"
+  131:
+    id: lyon_gerland
+    name: "Lyon - Gerland"
+    length_km: 0.7
+    surface: tarmac
 nl_gestel:
-  132: gestel
+  name: "Gestel"
+  country: "Netherlands"
+  132:
+    id: gestel
+    name: "Gestel"
+    length_km: 7.2
+    surface: tarmac
 cz_rx_kart_ring_1:
-  133: rx_kart_ring_1
+  name: "RX-Kart Ring 1"
+  country: "Czech Republic"
+  133:
+    id: rx_kart_ring_1
+    name: "RX-Kart Ring 1"
+    length_km: 1.6
+    surface: tarmac
 cz_rx_kart_ring_2:
-  134: rx_kart_ring_2
+  name: "RX-Kart Ring 2"
+  country: "Czech Republic"
+  134:
+    id: rx_kart_ring_2
+    name: "RX-Kart Ring 2"
+    length_km: 4.1
+    surface: tarmac
 cz_night_prolog:
-  135: night_prolog
+  name: "Night Prolog"
+  country: "Czech Republic"
+  135:
+    id: night_prolog
+    name: "Night Prolog"
+    length_km: 1.4
+    surface: tarmac
 cz_nove_hory_dolina:
-  136: nove_hory_dolina
+  name: "Nove Hory-Dolina"
+  country: "Czech Republic"
+  136:
+    id: nove_hory_dolina
+    name: "Nove Hory-Dolina"
+    length_km: 6.5
+    surface: tarmac
 cz_dolina_polookruh:
-  137: dolina_polookruh
+  name: "Dolina polookruh"
+  country: "Czech Republic"
+  137:
+    id: dolina_polookruh
+    name: "Dolina polookruh"
+    length_km: 6.6
+    surface: tarmac
 cz_koudelky_psinky:
-  138: koudelky_psinky
+  name: "Koudelky-Psinky"
+  country: "Czech Republic"
+  138:
+    id: koudelky_psinky
+    name: "Koudelky-Psinky"
+    length_km: 4.9
+    surface: tarmac
 ie_rsi_slalom_shonen:
-  139: rsi_slalom_shonen
+  name: "RSI slalom Shonen"
+  country: "Ireland"
+  139:
+    id: rsi_slalom_shonen
+    name: "RSI slalom Shonen"
+    length_km: 1
+    surface: tarmac
 ie_rsi_slalom_gegewrc:
-  140: rsi_slalom_gegewrc
+  name: "RSI slalom gegeWRC"
+  country: "Ireland"
+  140:
+    id: rsi_slalom_gegewrc
+    name: "RSI slalom gegeWRC"
+    length_km: 1.8
+    surface: tarmac
 sk_mlynky:
-  141: mlynky
-  156: mlynky_ii
+  name: "Mlynky"
+  country: "Slovakia"
+  141:
+    id: mlynky
+    name: "Mlynky"
+    length_km: 7.1
+    surface: tarmac
+  156:
+    id: mlynky_ii
+    name: "Mlynky II"
+    length_km: 7.1
+    surface: tarmac
 sk_mlynky_snow:
-  142: mlynky_snow
-  597: mlynky_snow_ii
+  name: "Mlynky Snow"
+  country: "Slovakia"
+  142:
+    id: mlynky_snow
+    name: "Mlynky Snow"
+    length_km: 7.1
+    surface: snow
+  597:
+    id: mlynky_snow_ii
+    name: "Mlynky Snow II"
+    length_km: 7.1
+    surface: snow
 sk_peklo:
-  143: peklo
-  146: peklo_ii
+  name: "Peklo"
+  country: "Slovakia"
+  143:
+    id: peklo
+    name: "Peklo"
+    length_km: 8.5
+    surface: tarmac
+  146:
+    id: peklo_ii
+    name: "Peklo II"
+    length_km: 8.5
+    surface: tarmac
 sk_peklo_snow:
-  144: peklo_snow
+  name: "Peklo Snow"
+  country: "Slovakia"
+  144:
+    id: peklo_snow
+    name: "Peklo Snow"
+    length_km: 8.5
+    surface: snow
 lt_versme:
-  145: versme
+  name: "Versme"
+  country: "Lithuania"
+  145:
+    id: versme
+    name: "Versme"
+    length_km: 3.2
+    surface: gravel
 sk_peklo_ii_snow:
-  147: peklo_ii_snow
+  name: "Peklo II Snow"
+  country: "Slovakia"
+  147:
+    id: peklo_ii_snow
+    name: "Peklo II Snow"
+    length_km: 8.5
+    surface: snow
 gb_roc_2008:
-  148: roc_2008
+  name: "ROC 2008"
+  country: "Great Britain"
+  148:
+    id: roc_2008
+    name: "ROC 2008"
+    length_km: 2
+    surface: tarmac
 de_sieversdorf:
-  149: sieversdorf
+  name: "Sieversdorf V1.1"
+  country: "Germany"
+  149:
+    id: sieversdorf
+    name: "Sieversdorf V1.1"
+    length_km: 8
+    surface: tarmac
 cz_bunc_2024:
-  150: bunc_2024
+  name: "Bunc 2024"
+  country: "Czech Republic"
+  150:
+    id: bunc_2024
+    name: "Bunc 2024"
+    length_km: 18
+    surface: tarmac
 cz_bunc_2025:
-  151: bunc_2025
+  name: "Bunc 2025"
+  country: "Czech Republic"
+  151:
+    id: bunc_2025
+    name: "Bunc 2025"
+    length_km: 18
+    surface: tarmac
 pl_rp_2009_shakedown:
-  152: rp_2009_shakedown
-  153: rp_2009_shakedown_reversed
+  name: "RP 2009 Shakedown"
+  country: "Poland"
+  152:
+    id: rp_2009_shakedown
+    name: "RP 2009 Shakedown"
+    length_km: 4.4
+    surface: gravel
+  153:
+    id: rp_2009_shakedown_reversed
+    name: "RP 2009 Shakedown Reversed"
+    length_km: 4.4
+    surface: gravel
 de_bruchsal_unteroewisheim:
-  154: bruchsal_unteroewisheim
+  name: "Bruchsal-Unteroewisheim"
+  country: "Germany"
+  154:
+    id: bruchsal_unteroewisheim
+    name: "Bruchsal-Unteroewisheim"
+    length_km: 8.9
+    surface: tarmac
 fi_humalamaki:
-  155: humalamaki
-  484: humalamaki_reversed
+  name: "Humalamaki 1.0"
+  country: "Finland"
+  155:
+    id: humalamaki
+    name: "Humalamaki 1.0"
+    length_km: 4.4
+    surface: gravel
+  484:
+    id: humalamaki_reversed
+    name: "Humalamaki Reversed"
+    length_km: 4.4
+    surface: gravel
 es_grand_canaria_roc_2000:
-  157: grand_canaria_roc_2000
+  name: "Grand Canaria ROC 2000"
+  country: "Spain"
+  157:
+    id: grand_canaria_roc_2000
+    name: "Grand Canaria ROC 2000"
+    length_km: 3.8
+    surface: gravel
 gb_sweet_lamb:
-  158: sweet_lamb
-  159: sweet_lamb_ii
+  name: "Sweet Lamb"
+  country: "Great Britain"
+  158:
+    id: sweet_lamb
+    name: "Sweet Lamb"
+    length_km: 5.1
+    surface: gravel
+  159:
+    id: sweet_lamb_ii
+    name: "Sweet Lamb II"
+    length_km: 5.1
+    surface: gravel
 cz_odry:
-  160: odry
-  161: odry_ii
+  name: "Odry"
+  country: "Czech Republic"
+  160:
+    id: odry
+    name: "Odry"
+    length_km: 7.2
+    surface: tarmac
+  161:
+    id: odry_ii
+    name: "Odry II"
+    length_km: 7.2
+    surface: tarmac
 cz_odry_snow:
-  162: odry_snow
+  name: "Odry Snow"
+  country: "Czech Republic"
+  162:
+    id: odry_snow
+    name: "Odry Snow"
+    length_km: 6.2
+    surface: snow
 cz_odry_snow_night:
-  163: odry_snow_night
+  name: "Odry Snow Night"
+  country: "Czech Republic"
+  163:
+    id: odry_snow_night
+    name: "Odry Snow Night"
+    length_km: 6.2
+    surface: snow
 cz_odry_ii_snow:
-  164: odry_ii_snow
+  name: "Odry II Snow"
+  country: "Czech Republic"
+  164:
+    id: odry_ii_snow
+    name: "Odry II Snow"
+    length_km: 6.2
+    surface: snow
 cz_odry_ii_snow_night:
-  165: odry_ii_snow_night
+  name: "Odry II Snow Night"
+  country: "Czech Republic"
+  165:
+    id: odry_ii_snow_night
+    name: "Odry II Snow Night"
+    length_km: 6.2
+    surface: snow
 cz_kamen:
-  166: kamen
+  name: "Kamen"
+  country: "Czech Republic"
+  166:
+    id: kamen
+    name: "Kamen"
+    length_km: 6.2
+    surface: tarmac
 cz_halenkovice_2018:
-  170: halenkovice_2018
+  name: "Halenkovice 2018"
+  country: "Czech Republic"
+  170:
+    id: halenkovice_2018
+    name: "Halenkovice 2018"
+    length_km: 13.8
+    surface: tarmac
 cz_vyskovec:
-  175: vyskovec
+  name: "Vyskovec"
+  country: "Czech Republic"
+  175:
+    id: vyskovec
+    name: "Vyskovec"
+    length_km: 6
+    surface: tarmac
 cz_vyskovec_okruh:
-  176: vyskovec_okruh
+  name: "Vyskovec okruh"
+  country: "Czech Republic"
+  176:
+    id: vyskovec_okruh
+    name: "Vyskovec okruh"
+    length_km: 9.5
+    surface: tarmac
 fi_saalahti:
-  300: saalahti
+  name: "Saalahti"
+  country: "Finland"
+  300:
+    id: saalahti
+    name: "Saalahti"
+    length_km: 4.7
+    surface: gravel
 cz_zaton:
-  411: zaton
-  414: zaton_ii
+  name: "Zaton"
+  country: "Czech Republic"
+  411:
+    id: zaton
+    name: "Zaton"
+    length_km: 6.6
+    surface: tarmac
+  414:
+    id: zaton_ii
+    name: "Zaton II"
+    length_km: 6.6
+    surface: tarmac
 cz_rozmital_96:
-  415: rozmital_96
-  413: rozmital_96_ii
+  name: "Rozmital 96"
+  country: "Czech Republic"
+  415:
+    id: rozmital_96
+    name: "Rozmital 96"
+    length_km: 6.8
+    surface: tarmac
+  413:
+    id: rozmital_96_ii
+    name: "Rozmital 96 II"
+    length_km: 6.8
+    surface: tarmac
 cz_helfstyn:
-  426: helfstyn
+  name: "Helfstyn"
+  country: "Czech Republic"
+  426:
+    id: helfstyn
+    name: "Helfstyn"
+    length_km: 13.9
+    surface: tarmac
 es_era_del_cardon:
-  429: era_del_cardon
-  454: era_del_cardon_ii
+  name: "Era del Cardon"
+  country: "Spain"
+  429:
+    id: era_del_cardon
+    name: "Era del Cardon"
+    length_km: 9.5
+    surface: tarmac
+  454:
+    id: era_del_cardon_ii
+    name: "Era del Cardon II"
+    length_km: 9.5
+    surface: tarmac
 fi_harju_2019:
-  433: harju_2019
+  name: "Harju 2019"
+  country: "Finland"
+  433:
+    id: harju_2019
+    name: "Harju 2019"
+    length_km: 2.3
+    surface: gravel
 fr_alpes_rally:
-  434: alpes_rally
+  name: "Alpes Rally"
+  country: "France"
+  434:
+    id: alpes_rally
+    name: "Alpes Rally"
+    length_km: 10.2
+    surface: tarmac
 cz_sss_valasske_mezirici:
-  449: sss_valasske_mezirici
+  name: "SSS Valasske Mezirici"
+  country: "Czech Republic"
+  449:
+    id: sss_valasske_mezirici
+    name: "SSS Valasske Mezirici"
+    length_km: 3.6
+    surface: tarmac
 es_la_atalaya:
-  451: la_atalaya
-  452: la_atalaya_ii
+  name: "La Atalaya"
+  country: "Spain"
+  451:
+    id: la_atalaya
+    name: "La Atalaya"
+    length_km: 7.5
+    surface: tarmac
+  452:
+    id: la_atalaya_ii
+    name: "La Atalaya II"
+    length_km: 7.5
+    surface: tarmac
 pl_rosciszow_walim:
-  458: rosciszow_walim
+  name: "Rosciszow-Walim"
+  country: "Poland"
+  458:
+    id: rosciszow_walim
+    name: "Rosciszow-Walim"
+    length_km: 8.5
+    surface: tarmac
 pl_walim_rosciszow:
-  459: walim_rosciszow
+  name: "Walim-Rosciszow"
+  country: "Poland"
+  459:
+    id: walim_rosciszow
+    name: "Walim-Rosciszow"
+    length_km: 8.5
+    surface: tarmac
 fr_sss_alpes_rally_school:
-  461: sss_alpes_rally_school
+  name: "SSS Alpes Rally School"
+  country: "France"
+  461:
+    id: sss_alpes_rally_school
+    name: "SSS Alpes Rally School"
+    length_km: 1.8
+    surface: tarmac
 pl_ul_rajdowa:
-  468: ul_rajdowa
+  name: "Ul. Rajdowa"
+  country: "Poland"
+  468:
+    id: ul_rajdowa
+    name: "Ul. Rajdowa"
+    length_km: 1.6
+    surface: tarmac
 pl_ul_rajdowa_r:
-  469: ul_rajdowa_r
+  name: "Ul. Rajdowa R"
+  country: "Poland"
+  469:
+    id: ul_rajdowa_r
+    name: "Ul. Rajdowa R"
+    length_km: 1.6
+    surface: tarmac
 ee_narva_kreenholmi_rahvasprint_2022:
-  470: narva_kreenholmi_rahvasprint_2022
+  name: "Narva Kreenholmi Rahvasprint 2022"
+  country: "Estonia"
+  470:
+    id: narva_kreenholmi_rahvasprint_2022
+    name: "Narva Kreenholmi Rahvasprint 2022"
+    length_km: 3.3
+    surface: gravel
 it_aragona:
-  471: aragona
+  name: "Aragona"
+  country: "Italy"
+  471:
+    id: aragona
+    name: "Aragona"
+    length_km: 6.4
+    surface: tarmac
 it_muxarello:
-  472: muxarello
+  name: "Muxarello"
+  country: "Italy"
+  472:
+    id: muxarello
+    name: "Muxarello"
+    length_km: 15.4
+    surface: tarmac
 cz_neubuz_slusovice:
-  476: neubuz_slusovice
+  name: "Neubuz - Slusovice"
+  country: "Czech Republic"
+  476:
+    id: neubuz_slusovice
+    name: "Neubuz - Slusovice"
+    length_km: 1.8
+    surface: tarmac
 es_rallysprint_hondarribia_2011:
-  478: rallysprint_hondarribia_2011
+  name: "Rallysprint Hondarribia 2011"
+  country: "Spain"
+  478:
+    id: rallysprint_hondarribia_2011
+    name: "Rallysprint Hondarribia 2011"
+    length_km: 8
+    surface: tarmac
 jp_shomaru_pass:
-  479: shomaru_pass
-  480: shomaru_pass_ii
+  name: "Shomaru Pass"
+  country: "Japan"
+  479:
+    id: shomaru_pass
+    name: "Shomaru Pass"
+    length_km: 5.8
+    surface: tarmac
+  480:
+    id: shomaru_pass_ii
+    name: "Shomaru Pass II"
+    length_km: 5.8
+    surface: tarmac
 se_karlstad:
-  481: karlstad
-  482: karlstad_ii
+  name: "Karlstad"
+  country: "Sweden"
+  481:
+    id: karlstad
+    name: "Karlstad"
+    length_km: 1.9
+    surface: snow
+  482:
+    id: karlstad_ii
+    name: "Karlstad II"
+    length_km: 1.9
+    surface: snow
 se_torsby_shakedown:
-  485: torsby_shakedown
+  name: "Torsby Shakedown"
+  country: "Sweden"
+  485:
+    id: torsby_shakedown
+    name: "Torsby Shakedown"
+    length_km: 4.2
+    surface: snow
 pl_woliborz_jodlownik:
-  486: woliborz_jodlownik
+  name: "Woliborz - Jodlownik"
+  country: "Poland"
+  486:
+    id: woliborz_jodlownik
+    name: "Woliborz - Jodlownik"
+    length_km: 8.2
+    surface: tarmac
 pl_jodlownik_woliborz:
-  487: jodlownik_woliborz
+  name: "Jodlownik - Woliborz"
+  country: "Poland"
+  487:
+    id: jodlownik_woliborz
+    name: "Jodlownik - Woliborz"
+    length_km: 8.2
+    surface: tarmac
 xx_jirkovicky:
-  488: jirkovicky
-  489: jirkovicky_ii
+  name: "Jirkovicky"
+  country: "Montekland"
+  488:
+    id: jirkovicky
+    name: "Jirkovicky"
+    length_km: 3.5
+    surface: gravel
+  489:
+    id: jirkovicky_ii
+    name: "Jirkovicky II"
+    length_km: 3.5
+    surface: gravel
 xx_sourkov:
-  490: sourkov
-  499: sourkov_ii
+  name: "Sourkov"
+  country: "Montekland"
+  490:
+    id: sourkov
+    name: "Sourkov"
+    length_km: 6.2
+    surface: gravel
+  499:
+    id: sourkov_ii
+    name: "Sourkov II"
+    length_km: 6.2
+    surface: gravel
 xx_lernovec:
-  491: lernovec
-  495: lernovec_ii
+  name: "Lernovec"
+  country: "Montekland"
+  491:
+    id: lernovec
+    name: "Lernovec"
+    length_km: 5
+    surface: gravel
+  495:
+    id: lernovec_ii
+    name: "Lernovec II"
+    length_km: 5
+    surface: gravel
 xx_uzkotin:
-  492: uzkotin
-  496: uzkotin_ii
+  name: "Uzkotin"
+  country: "Montekland"
+  492:
+    id: uzkotin
+    name: "Uzkotin"
+    length_km: 7.8
+    surface: gravel
+  496:
+    id: uzkotin_ii
+    name: "Uzkotin II"
+    length_km: 7.6
+    surface: gravel
 xx_hroudovany:
-  493: hroudovany
-  497: hroudovany_ii
+  name: "Hroudovany"
+  country: "Montekland"
+  493:
+    id: hroudovany
+    name: "Hroudovany"
+    length_km: 7.1
+    surface: gravel
+  497:
+    id: hroudovany_ii
+    name: "Hroudovany II"
+    length_km: 7.1
+    surface: gravel
 xx_snekovice:
-  494: snekovice
-  498: snekovice_ii
+  name: "Snekovice"
+  country: "Montekland"
+  494:
+    id: snekovice
+    name: "Snekovice"
+    length_km: 8.6
+    surface: gravel
+  498:
+    id: snekovice_ii
+    name: "Snekovice II"
+    length_km: 8.6
+    surface: gravel
 cz_hradek_1:
-  516: hradek_1
+  name: "Hradek 1"
+  country: "Czech Republic"
+  516:
+    id: hradek_1
+    name: "Hradek 1"
+    length_km: 5.8
+    surface: tarmac
 cz_hradek_2:
-  517: hradek_2
+  name: "Hradek 2"
+  country: "Czech Republic"
+  517:
+    id: hradek_2
+    name: "Hradek 2"
+    length_km: 5.8
+    surface: tarmac
 cz_liptakov_1:
-  518: liptakov_1
+  name: "Liptakov 1"
+  country: "Czech Republic"
+  518:
+    id: liptakov_1
+    name: "Liptakov 1"
+    length_km: 6
+    surface: tarmac
 cz_liptakov_2:
-  519: liptakov_2
+  name: "Liptakov 2"
+  country: "Czech Republic"
+  519:
+    id: liptakov_2
+    name: "Liptakov 2"
+    length_km: 6
+    surface: tarmac
 cz_rally_school_czech:
-  522: rally_school_czech
-  524: rally_school_czech_ii
+  name: "Rally School Czech"
+  country: "Czech Republic"
+  522:
+    id: rally_school_czech
+    name: "Rally School Czech"
+    length_km: 3.2
+    surface: tarmac
+  524:
+    id: rally_school_czech_ii
+    name: "Rally School Czech II"
+    length_km: 3.1
+    surface: tarmac
 pl_kaczyce:
-  526: kaczyce
+  name: "Kaczyce"
+  country: "Poland"
+  526:
+    id: kaczyce
+    name: "Kaczyce"
+    length_km: 3.3
+    surface: tarmac
 fi_kuadonvaara:
-  528: kuadonvaara
+  name: "Kuadonvaara"
+  country: "Finland"
+  528:
+    id: kuadonvaara
+    name: "Kuadonvaara"
+    length_km: 5.7
+    surface: snow
 pl_karowa_2009:
-  533: karowa_2009
+  name: "Karowa 2009"
+  country: "Poland"
+  533:
+    id: karowa_2009
+    name: "Karowa 2009"
+    length_km: 1.6
+    surface: tarmac
 fr_haugenau_2012:
-  534: haugenau_2012
+  name: "Haugenau 2012"
+  country: "France"
+  534:
+    id: haugenau_2012
+    name: "Haugenau 2012"
+    length_km: 5.7
+    surface: tarmac
 fr_course_de_cote_de_cauterets:
-  535: course_de_cote_de_cauterets
+  name: "Course de Cote de Cauterets"
+  country: "France"
+  535:
+    id: course_de_cote_de_cauterets
+    name: "Course de Cote de Cauterets"
+    length_km: 1.8
+    surface: tarmac
 fr_course_de_cote_de_cauterets_slalom:
-  536: course_de_cote_de_cauterets_slalom
+  name: "Course de Cote de Cauterets Slalom"
+  country: "France"
+  536:
+    id: course_de_cote_de_cauterets_slalom
+    name: "Course de Cote de Cauterets Slalom"
+    length_km: 1.8
+    surface: tarmac
 ar_fernet_branca:
-  544: fernet_branca
+  name: "Fernet Branca"
+  country: "Argentina"
+  544:
+    id: fernet_branca
+    name: "Fernet Branca"
+    length_km: 6
+    surface: gravel
 au_junior_wheels_i:
-  545: junior_wheels_i
-  546: junior_wheels_ii
+  name: "Junior Wheels I"
+  country: "Australia"
+  545:
+    id: junior_wheels_i
+    name: "Junior Wheels I"
+    length_km: 5.6
+    surface: gravel
+  546:
+    id: junior_wheels_ii
+    name: "Junior Wheels II"
+    length_km: 5.6
+    surface: gravel
 fr_foron:
-  550: foron
-  551: foron_ii
+  name: "Foron"
+  country: "France"
+  550:
+    id: foron
+    name: "Foron"
+    length_km: 9.2
+    surface: tarmac
+  551:
+    id: foron_ii
+    name: "Foron II"
+    length_km: 9.2
+    surface: tarmac
 fr_foron_snow:
-  552: foron_snow
-  553: foron_snow_ii
+  name: "Foron Snow"
+  country: "France"
+  552:
+    id: foron_snow
+    name: "Foron Snow"
+    length_km: 9.1
+    surface: snow
+  553:
+    id: foron_snow_ii
+    name: "Foron Snow II"
+    length_km: 9.1
+    surface: snow
 fr_maton_i:
-  555: maton_i
-  556: maton_ii
+  name: "Maton I"
+  country: "France"
+  555:
+    id: maton_i
+    name: "Maton I"
+    length_km: 3.5
+    surface: tarmac
+  556:
+    id: maton_ii
+    name: "Maton II"
+    length_km: 3.5
+    surface: tarmac
 it_red_bull_hc:
-  557: red_bull_hc
+  name: "Red Bull HC"
+  country: "Italy"
+  557:
+    id: red_bull_hc
+    name: "Red Bull HC"
+    length_km: 14
+    surface: gravel
 fr_maton_snow:
-  558: maton_snow
-  559: maton_snow_ii
+  name: "Maton snow"
+  country: "France"
+  558:
+    id: maton_snow
+    name: "Maton snow"
+    length_km: 3.5
+    surface: snow
+  559:
+    id: maton_snow_ii
+    name: "Maton snow II"
+    length_km: 3.5
+    surface: snow
 gb_loch_ard:
-  560: loch_ard
-  561: loch_ard_ii
+  name: "Loch Ard"
+  country: "Great Britain"
+  560:
+    id: loch_ard
+    name: "Loch Ard"
+    length_km: 8.3
+    surface: gravel
+  561:
+    id: loch_ard_ii
+    name: "Loch Ard II"
+    length_km: 8.3
+    surface: gravel
 br_passauna_i:
-  563: passauna_i
-  564: passauna_ii
+  name: "Passauna I"
+  country: "Brazil"
+  563:
+    id: passauna_i
+    name: "Passauna I"
+    length_km: 5.5
+    surface: gravel
+  564:
+    id: passauna_ii
+    name: "Passauna II"
+    length_km: 5.6
+    surface: gravel
 ee_undva:
-  566: undva
-  565: undva_reversed
+  name: "Undva"
+  country: "Estonia"
+  566:
+    id: undva
+    name: "Undva"
+    length_km: 10
+    surface: gravel
+  565:
+    id: undva_reversed
+    name: "Undva Reversed"
+    length_km: 10
+    surface: gravel
 fr_peyregrosse_mandagout:
-  570: peyregrosse_mandagout
+  name: "Peyregrosse - Mandagout"
+  country: "France"
+  570:
+    id: peyregrosse_mandagout
+    name: "Peyregrosse - Mandagout"
+    length_km: 12.8
+    surface: tarmac
 fr_peyregrosse_mandagout_night:
-  571: peyregrosse_mandagout_night
+  name: "Peyregrosse - Mandagout NIGHT"
+  country: "France"
+  571:
+    id: peyregrosse_mandagout_night
+    name: "Peyregrosse - Mandagout NIGHT"
+    length_km: 12.8
+    surface: tarmac
 it_castrezzato:
-  572: castrezzato
+  name: "Castrezzato"
+  country: "Italy"
+  572:
+    id: castrezzato
+    name: "Castrezzato"
+    length_km: 8.1
+    surface: tarmac
 it_ss_daniel_bonara:
-  573: ss_daniel_bonara
+  name: "SS Daniel Bonara"
+  country: "Italy"
+  573:
+    id: ss_daniel_bonara
+    name: "SS Daniel Bonara"
+    length_km: 5.5
+    surface: tarmac
 si_sorica:
-  574: sorica
+  name: "Sorica"
+  country: "Slovenia"
+  574:
+    id: sorica
+    name: "Sorica"
+    length_km: 15.5
+    surface: tarmac
 si_zelezniki_2014:
-  575: zelezniki_2014
+  name: "Zelezniki 2014"
+  country: "Slovenia"
+  575:
+    id: zelezniki_2014
+    name: "Zelezniki 2014"
+    length_km: 9.1
+    surface: tarmac
 fr_peyre_winter:
-  576: peyre_winter
+  name: "Peyre Winter"
+  country: "France"
+  576:
+    id: peyre_winter
+    name: "Peyre Winter"
+    length_km: 12.8
+    surface: snow
 cz_barum_rally_2009_semetin:
-  582: barum_rally_2009_semetin
+  name: "Barum rally 2009 Semetin"
+  country: "Czech Republic"
+  582:
+    id: barum_rally_2009_semetin
+    name: "Barum rally 2009 Semetin"
+    length_km: 11.7
+    surface: tarmac
 cz_barum_rally_2010_semetin:
-  583: barum_rally_2010_semetin
+  name: "Barum rally 2010 Semetin"
+  country: "Czech Republic"
+  583:
+    id: barum_rally_2010_semetin
+    name: "Barum rally 2010 Semetin"
+    length_km: 11.7
+    surface: tarmac
 ch_swiss_i:
-  586: swiss_i
-  585: swiss_ii
+  name: "SWISS I"
+  country: "Switzerland"
+  586:
+    id: swiss_i
+    name: "SWISS I"
+    length_km: 5.6
+    surface: tarmac
+  585:
+    id: swiss_ii
+    name: "SWISS II"
+    length_km: 5.6
+    surface: gravel
 ch_swiss_iv:
-  587: swiss_iv
+  name: "Swiss IV"
+  country: "Switzerland"
+  587:
+    id: swiss_iv
+    name: "Swiss IV"
+    length_km: 8.2
+    surface: gravel
 ch_swiss_iii:
-  589: swiss_iii
+  name: "Swiss III"
+  country: "Switzerland"
+  589:
+    id: swiss_iii
+    name: "Swiss III"
+    length_km: 8.2
+    surface: tarmac
 fr_blanare:
-  590: blanare
-  591: blanare_ii
+  name: "Blanare"
+  country: "France"
+  590:
+    id: blanare
+    name: "Blanare"
+    length_km: 7.6
+    surface: snow
+  591:
+    id: blanare_ii
+    name: "Blanare II"
+    length_km: 6.6
+    surface: snow
 sk_slovakia_ring_2014:
-  592: slovakia_ring_2014
-  593: slovakia_ring_2014_ii
+  name: "Slovakia Ring 2014"
+  country: "Slovakia"
+  592:
+    id: slovakia_ring_2014
+    name: "Slovakia Ring 2014"
+    length_km: 11
+    surface: tarmac
+  593:
+    id: slovakia_ring_2014_ii
+    name: "Slovakia Ring 2014 II"
+    length_km: 11
+    surface: tarmac
 us_sardian:
-  595: sardian
+  name: "Sardian"
+  country: "USA"
+  595:
+    id: sardian
+    name: "Sardian"
+    length_km: 5.1
+    surface: tarmac
 us_sardian_night:
-  596: sardian_night
+  name: "Sardian Night"
+  country: "USA"
+  596:
+    id: sardian_night
+    name: "Sardian Night"
+    length_km: 5.1
+    surface: tarmac
 us_pikes_peak_2008:
-  598: pikes_peak_2008
+  name: "Pikes Peak 2008"
+  country: "USA"
+  598:
+    id: pikes_peak_2008
+    name: "Pikes Peak 2008"
+    length_km: 19.9
+    surface: tarmac
 gb_northumbria:
-  599: northumbria
+  name: "Northumbria"
+  country: "Great Britain"
+  599:
+    id: northumbria
+    name: "Northumbria"
+    length_km: 9
+    surface: gravel
 gb_northumbria_tarmac:
-  601: northumbria_tarmac
+  name: "Northumbria Tarmac"
+  country: "Great Britain"
+  601:
+    id: northumbria_tarmac
+    name: "Northumbria Tarmac"
+    length_km: 9
+    surface: tarmac
 fr_lescheraines_arith:
-  602: lescheraines_arith
+  name: "Lescheraines-Arith"
+  country: "France"
+  602:
+    id: lescheraines_arith
+    name: "Lescheraines-Arith"
+    length_km: 5.2
+    surface: tarmac
 pl_witoszow_zloty_las:
-  604: witoszow_zloty_las
+  name: "Witoszow - Zloty Las"
+  country: "Poland"
+  604:
+    id: witoszow_zloty_las
+    name: "Witoszow - Zloty Las"
+    length_km: 5.4
+    surface: tarmac
 pl_zloty_las_witoszow:
-  605: zloty_las_witoszow
+  name: "Zloty Las - Witoszow"
+  country: "Poland"
+  605:
+    id: zloty_las_witoszow
+    name: "Zloty Las - Witoszow"
+    length_km: 5.5
+    surface: tarmac
 sk_sturec:
-  607: sturec
-  608: sturec_ii
+  name: "Sturec"
+  country: "Slovakia"
+  607:
+    id: sturec
+    name: "Sturec"
+    length_km: 8.1
+    surface: tarmac
+  608:
+    id: sturec_ii
+    name: "Sturec II"
+    length_km: 8.2
+    surface: tarmac
 sk_sturec_snow:
-  609: sturec_snow
-  610: sturec_snow_ii
+  name: "Sturec snow"
+  country: "Slovakia"
+  609:
+    id: sturec_snow
+    name: "Sturec snow"
+    length_km: 8.1
+    surface: snow
+  610:
+    id: sturec_snow_ii
+    name: "Sturec snow II"
+    length_km: 8.2
+    surface: snow
 fr_capo_di_feno:
-  611: capo_di_feno
-  612: capo_di_feno_ii
+  name: "Capo Di Feno"
+  country: "France"
+  611:
+    id: capo_di_feno
+    name: "Capo Di Feno"
+    length_km: 4.5
+    surface: tarmac
+  612:
+    id: capo_di_feno_ii
+    name: "Capo Di Feno II"
+    length_km: 4.5
+    surface: tarmac
 sk_uhorna:
-  613: uhorna
-  614: uhorna_ii
+  name: "Uhorna"
+  country: "Slovakia"
+  613:
+    id: uhorna
+    name: "Uhorna"
+    length_km: 11.5
+    surface: tarmac
+  614:
+    id: uhorna_ii
+    name: "Uhorna II"
+    length_km: 11.5
+    surface: tarmac
 sk_uhorna_snow:
-  615: uhorna_snow
-  616: uhorna_snow_ii
+  name: "Uhorna snow"
+  country: "Slovakia"
+  615:
+    id: uhorna_snow
+    name: "Uhorna snow"
+    length_km: 11.5
+    surface: snow
+  616:
+    id: uhorna_snow_ii
+    name: "Uhorna snow II"
+    length_km: 11.5
+    surface: snow
 hu_rabocsiring_2021_rally_hungary_ss1:
-  676: rabocsiring_2021_rally_hungary_ss1
+  name: "RabocsiRing 2021 Rally Hungary SS1"
+  country: "Hungary"
+  676:
+    id: rabocsiring_2021_rally_hungary_ss1
+    name: "RabocsiRing 2021 Rally Hungary SS1"
+    length_km: 2.4
+    surface: tarmac
 hu_rabocsiring_rx:
-  677: rabocsiring_rx
+  name: "RabocsiRing RX"
+  country: "Hungary"
+  677:
+    id: rabocsiring_rx
+    name: "RabocsiRing RX"
+    length_km: 3.3
+    surface: tarmac
 it_passo_valle:
-  700: passo_valle
-  701: passo_valle_reverse
+  name: "Passo Valle"
+  country: "Italy"
+  700:
+    id: passo_valle
+    name: "Passo Valle"
+    length_km: 5.8
+    surface: tarmac
+  701:
+    id: passo_valle_reverse
+    name: "Passo Valle Reverse"
+    length_km: 5.8
+    surface: tarmac
 pt_lousada_wrc:
-  703: lousada_wrc
+  name: "Lousada - WRC"
+  country: "Portugal"
+  703:
+    id: lousada_wrc
+    name: "Lousada - WRC"
+    length_km: 3.3
+    surface: gravel
 pt_lousada_rx:
-  704: lousada_rx
+  name: "Lousada - RX"
+  country: "Portugal"
+  704:
+    id: lousada_rx
+    name: "Lousada - RX"
+    length_km: 3.6
+    surface: tarmac
 pt_lousada_rg:
-  705: lousada_rg
+  name: "Lousada - RG"
+  country: "Portugal"
+  705:
+    id: lousada_rg
+    name: "Lousada - RG"
+    length_km: 3.8
+    surface: gravel
 pt_carvalho_de_rei_2008:
-  708: carvalho_de_rei_2008
-  707: carvalho_de_rei_2008_ii
+  name: "Carvalho de Rei 2008"
+  country: "Portugal"
+  708:
+    id: carvalho_de_rei_2008
+    name: "Carvalho de Rei 2008"
+    length_km: 8.2
+    surface: gravel
+  707:
+    id: carvalho_de_rei_2008_ii
+    name: "Carvalho de Rei 2008 II"
+    length_km: 8.2
+    surface: gravel
 pt_travanca_do_monte:
-  709: travanca_do_monte
+  name: "Travanca do Monte"
+  country: "Portugal"
+  709:
+    id: travanca_do_monte
+    name: "Travanca do Monte"
+    length_km: 3
+    surface: gravel
 jp_akagi_mountain:
-  711: akagi_mountain
-  712: akagi_mountain_ii
+  name: "Akagi Mountain"
+  country: "Japan"
+  711:
+    id: akagi_mountain
+    name: "Akagi Mountain"
+    length_km: 3.5
+    surface: tarmac
+  712:
+    id: akagi_mountain_ii
+    name: "Akagi Mountain II"
+    length_km: 3.5
+    surface: tarmac
 lt_verkiai_2010:
-  720: verkiai_2010
-  721: verkiai_2010_reverse
+  name: "Verkiai 2010"
+  country: "Lithuania"
+  720:
+    id: verkiai_2010
+    name: "Verkiai 2010"
+    length_km: 5.6
+    surface: tarmac
+  721:
+    id: verkiai_2010_reverse
+    name: "Verkiai 2010 Reverse"
+    length_km: 5.9
+    surface: tarmac
 lt_verkiai_2010_sss:
-  723: verkiai_2010_sss
+  name: "Verkiai 2010 SSS"
+  country: "Lithuania"
+  723:
+    id: verkiai_2010_sss
+    name: "Verkiai 2010 SSS"
+    length_km: 1
+    surface: tarmac
 se_torsby_2018:
-  725: torsby_2018
+  name: "Torsby 2018"
+  country: "Sweden"
+  725:
+    id: torsby_2018
+    name: "Torsby 2018"
+    length_km: 9.6
+    surface: snow
 se_torsby_2018_sprint:
-  726: torsby_2018_sprint
+  name: "Torsby 2018 Sprint"
+  country: "Sweden"
+  726:
+    id: torsby_2018_sprint
+    name: "Torsby 2018 Sprint"
+    length_km: 3.5
+    surface: snow
 it_dolmen:
-  755: dolmen
+  name: "Dolmen"
+  country: "Italy"
+  755:
+    id: dolmen
+    name: "Dolmen"
+    length_km: 13.3
+    surface: gravel
 it_pian_del_colle:
-  777: pian_del_colle
-  778: pian_del_colle_reversed
+  name: "Pian del Colle"
+  country: "Italy"
+  777:
+    id: pian_del_colle
+    name: "Pian del Colle"
+    length_km: 8.3
+    surface: tarmac
+  778:
+    id: pian_del_colle_reversed
+    name: "Pian del Colle Reversed"
+    length_km: 8.4
+    surface: tarmac
 it_pian_del_colle_snow:
-  779: pian_del_colle_snow
-  780: pian_del_colle_snow_reversed
+  name: "Pian del Colle Snow"
+  country: "Italy"
+  779:
+    id: pian_del_colle_snow
+    name: "Pian del Colle Snow"
+    length_km: 8.3
+    surface: snow
+  780:
+    id: pian_del_colle_snow_reversed
+    name: "Pian del Colle Snow Reversed"
+    length_km: 8.4
+    surface: snow
 es_el_fargue_ss1:
-  787: el_fargue_ss1
+  name: "El Fargue SS1"
+  country: "Spain"
+  787:
+    id: el_fargue_ss1
+    name: "El Fargue SS1"
+    length_km: 6.7
+    surface: tarmac
 ua_ai_petri:
-  800: ai_petri
+  name: "Ai-Petri"
+  country: "Ukraine"
+  800:
+    id: ai_petri
+    name: "Ai-Petri"
+    length_km: 17.3
+    surface: tarmac
 ua_uchan_su:
-  801: uchan_su
+  name: "Uchan-Su"
+  country: "Ukraine"
+  801:
+    id: uchan_su
+    name: "Uchan-Su"
+    length_km: 10.8
+    surface: tarmac
 ua_ai_petri_winter:
-  802: ai_petri_winter
+  name: "Ai-Petri Winter"
+  country: "Ukraine"
+  802:
+    id: ai_petri_winter
+    name: "Ai-Petri Winter"
+    length_km: 17.3
+    surface: snow
 ua_uchan_su_winter:
-  803: uchan_su_winter
+  name: "Uchan-Su Winter"
+  country: "Ukraine"
+  803:
+    id: uchan_su_winter
+    name: "Uchan-Su Winter"
+    length_km: 10.8
+    surface: snow
 gb_wythop_i:
-  805: wythop_i
-  806: wythop_ii
+  name: "Wythop I"
+  country: "Great Britain"
+  805:
+    id: wythop_i
+    name: "Wythop I"
+    length_km: 5.3
+    surface: gravel
+  806:
+    id: wythop_ii
+    name: "Wythop II"
+    length_km: 5.3
+    surface: gravel
 ua_livadija:
-  810: livadija
-  811: livadija_ii
+  name: "Livadija"
+  country: "Ukraine"
+  810:
+    id: livadija
+    name: "Livadija"
+    length_km: 5.5
+    surface: tarmac
+  811:
+    id: livadija_ii
+    name: "Livadija II"
+    length_km: 5.5
+    surface: tarmac
 it_la_rocca:
-  820: la_rocca
+  name: "La Rocca"
+  country: "Italy"
+  820:
+    id: la_rocca
+    name: "La Rocca"
+    length_km: 7.4
+    surface: gravel
 ua_azov:
-  830: azov
-  831: azov_ii
+  name: "Azov"
+  country: "Ukraine"
+  830:
+    id: azov
+    name: "Azov"
+    length_km: 19.1
+    surface: gravel
+  831:
+    id: azov_ii
+    name: "Azov II"
+    length_km: 19.2
+    surface: gravel
 ua_shurdin_i:
-  834: shurdin_i
-  833: shurdin_ii
+  name: "Shurdin I"
+  country: "Ukraine"
+  834:
+    id: shurdin_i
+    name: "Shurdin I"
+    length_km: 22.1
+    surface: gravel
+  833:
+    id: shurdin_ii
+    name: "Shurdin II"
+    length_km: 22.1
+    surface: gravel
 fr_alsace:
-  841: alsace
+  name: "Alsace"
+  country: "France"
+  841:
+    id: alsace
+    name: "Alsace"
+    length_km: 8.7
+    surface: tarmac
 fr_luceram_col_saint_roch:
-  848: luceram_col_saint_roch
+  name: "Luceram-Col Saint Roch"
+  country: "France"
+  848:
+    id: luceram_col_saint_roch
+    name: "Luceram-Col Saint Roch"
+    length_km: 5.6
+    surface: tarmac
 lt_zaraso_salos_trekas_5_laps:
-  886: zaraso_salos_trekas_5_laps
+  name: "Zaraso Salos Trekas - 5 laps"
+  country: "Lithuania"
+  886:
+    id: zaraso_salos_trekas_5_laps
+    name: "Zaraso Salos Trekas - 5 laps"
+    length_km: 5
+    surface: gravel
 lt_zaraso_salos_trekas_2_laps:
-  887: zaraso_salos_trekas_2_laps
+  name: "Zaraso Salos Trekas - 2 laps"
+  country: "Lithuania"
+  887:
+    id: zaraso_salos_trekas_2_laps
+    name: "Zaraso Salos Trekas - 2 laps"
+    length_km: 2
+    surface: gravel
 it_shakedown_rally_del_salento_2014:
-  888: shakedown_rally_del_salento_2014
+  name: "Shakedown Rally del Salento 2014"
+  country: "Italy"
+  888:
+    id: shakedown_rally_del_salento_2014
+    name: "Shakedown Rally del Salento 2014"
+    length_km: 3.8
+    surface: tarmac
 it_torre_vecchia:
-  911: torre_vecchia
+  name: "Torre Vecchia"
+  country: "Italy"
+  911:
+    id: torre_vecchia
+    name: "Torre Vecchia"
+    length_km: 9.8
+    surface: tarmac
 cz_svince:
-  929: svince
-  930: svince_ii
+  name: "Svince"
+  country: "Czech Republic"
+  929:
+    id: svince
+    name: "Svince"
+    length_km: 4.8
+    surface: tarmac
+  930:
+    id: svince_ii
+    name: "Svince II"
+    length_km: 4.8
+    surface: tarmac
 xx_rally_school_mix:
-  931: rally_school_mix
-  932: rally_school_mix_ii
+  name: "Rally school mix"
+  country: "Rally School"
+  931:
+    id: rally_school_mix
+    name: "Rally school mix"
+    length_km: 5.2
+    surface: gravel
+  932:
+    id: rally_school_mix_ii
+    name: "Rally school mix II"
+    length_km: 5.2
+    surface: gravel
 xx_rally_school_tarmac:
-  933: rally_school_tarmac
-  934: rally_school_tarmac_ii
+  name: "Rally school tarmac"
+  country: "Rally School"
+  933:
+    id: rally_school_tarmac
+    name: "Rally school tarmac"
+    length_km: 5.2
+    surface: tarmac
+  934:
+    id: rally_school_tarmac_ii
+    name: "Rally school tarmac II"
+    length_km: 5.2
+    surface: tarmac
 fi_hyppyrata_tarmac:
-  938: hyppyrata_tarmac
-  937: hyppyrata_tarmac_ii
+  name: "Hyppyrata tarmac"
+  country: "Finland"
+  938:
+    id: hyppyrata_tarmac
+    name: "Hyppyrata tarmac"
+    length_km: 8
+    surface: tarmac
+  937:
+    id: hyppyrata_tarmac_ii
+    name: "Hyppyrata tarmac II"
+    length_km: 8
+    surface: tarmac
 it_tavia:
-  969: tavia
+  name: "Tavia"
+  country: "Italy"
+  969:
+    id: tavia
+    name: "Tavia"
+    length_km: 3.8
+    surface: gravel
 it_berica:
-  979: berica
+  name: "Berica"
+  country: "Italy"
+  979:
+    id: berica
+    name: "Berica"
+    length_km: 14.8
+    surface: gravel
 pl_rally_wisla_shakedown:
-  980: rally_wisla_shakedown
+  name: "Rally Wisla Shakedown"
+  country: "Poland"
+  980:
+    id: rally_wisla_shakedown
+    name: "Rally Wisla Shakedown"
+    length_km: 2.5
+    surface: tarmac
 fi_hyppyjulma_gravel:
-  981: hyppyjulma_gravel
-  982: hyppyjulma_gravel_ii
+  name: "Hyppyjulma gravel"
+  country: "Finland"
+  981:
+    id: hyppyjulma_gravel
+    name: "Hyppyjulma gravel"
+    length_km: 6.1
+    surface: gravel
+  982:
+    id: hyppyjulma_gravel_ii
+    name: "Hyppyjulma gravel II"
+    length_km: 6.1
+    surface: gravel
 fi_hyppyjulma_tarmac:
-  983: hyppyjulma_tarmac
-  984: hyppyjulma_tarmac_ii
+  name: "Hyppyjulma tarmac"
+  country: "Finland"
+  983:
+    id: hyppyjulma_tarmac
+    name: "Hyppyjulma tarmac"
+    length_km: 6.1
+    surface: tarmac
+  984:
+    id: hyppyjulma_tarmac_ii
+    name: "Hyppyjulma tarmac II"
+    length_km: 6.1
+    surface: tarmac
 fi_kolmenjarvet_gravel:
-  985: kolmenjarvet_gravel
-  986: kolmenjarvet_gravel_ii
+  name: "Kolmenjarvet gravel"
+  country: "Finland"
+  985:
+    id: kolmenjarvet_gravel
+    name: "Kolmenjarvet gravel"
+    length_km: 6.1
+    surface: gravel
+  986:
+    id: kolmenjarvet_gravel_ii
+    name: "Kolmenjarvet gravel II"
+    length_km: 6.1
+    surface: gravel
 fi_kolmenjarvet_tarmac:
-  987: kolmenjarvet_tarmac
-  988: kolmenjarvet_tarmac_ii
+  name: "Kolmenjarvet tarmac"
+  country: "Finland"
+  987:
+    id: kolmenjarvet_tarmac
+    name: "Kolmenjarvet tarmac"
+    length_km: 6.1
+    surface: tarmac
+  988:
+    id: kolmenjarvet_tarmac_ii
+    name: "Kolmenjarvet tarmac II"
+    length_km: 6.1
+    surface: tarmac
 fi_joukkovaara_gravel:
-  989: joukkovaara_gravel
-  990: joukkovaara_gravel_ii
+  name: "Joukkovaara gravel"
+  country: "Finland"
+  989:
+    id: joukkovaara_gravel
+    name: "Joukkovaara gravel"
+    length_km: 10.2
+    surface: gravel
+  990:
+    id: joukkovaara_gravel_ii
+    name: "Joukkovaara gravel II"
+    length_km: 10.2
+    surface: gravel
 fi_joukkovaara_tarmac:
-  991: joukkovaara_tarmac
-  992: joukkovaara_tarmac_ii
+  name: "Joukkovaara tarmac"
+  country: "Finland"
+  991:
+    id: joukkovaara_tarmac
+    name: "Joukkovaara tarmac"
+    length_km: 10.2
+    surface: tarmac
+  992:
+    id: joukkovaara_tarmac_ii
+    name: "Joukkovaara tarmac II"
+    length_km: 10.2
+    surface: tarmac
 pl_kormoran_shakedown:
-  993: kormoran_shakedown
+  name: "Kormoran Shakedown"
+  country: "Poland"
+  993:
+    id: kormoran_shakedown
+    name: "Kormoran Shakedown"
+    length_km: 5.2
+    surface: gravel
 pl_kormoran_i:
-  994: kormoran_i
-  995: kormoran_ii
+  name: "Kormoran I"
+  country: "Poland"
+  994:
+    id: kormoran_i
+    name: "Kormoran I"
+    length_km: 10.3
+    surface: gravel
+  995:
+    id: kormoran_ii
+    name: "Kormoran II"
+    length_km: 12
+    surface: gravel
 pl_sss_mikolajki_i:
-  996: sss_mikolajki_i
-  997: sss_mikolajki_ii
+  name: "SSS Mikolajki I"
+  country: "Poland"
+  996:
+    id: sss_mikolajki_i
+    name: "SSS Mikolajki I"
+    length_km: 2.6
+    surface: gravel
+  997:
+    id: sss_mikolajki_ii
+    name: "SSS Mikolajki II"
+    length_km: 2.6
+    surface: gravel
 au_sss_york_i:
-  998: sss_york_i
-  999: sss_york_ii
+  name: "SSS York I"
+  country: "Australia"
+  998:
+    id: sss_york_i
+    name: "SSS York I"
+    length_km: 4.3
+    surface: gravel
+  999:
+    id: sss_york_ii
+    name: "SSS York II"
+    length_km: 4.3
+    surface: gravel
 cz_biskupice_2004:
-  1000: biskupice_2004
-  1001: biskupice_2004_ii
+  name: "Biskupice 2004"
+  country: "Czech Republic"
+  1000:
+    id: biskupice_2004
+    name: "Biskupice 2004"
+    length_km: 7.5
+    surface: tarmac
+  1001:
+    id: biskupice_2004_ii
+    name: "Biskupice 2004 II"
+    length_km: 7.9
+    surface: tarmac
 cz_biskupice_sss:
-  1002: biskupice_sss
+  name: "Biskupice SSS"
+  country: "Czech Republic"
+  1002:
+    id: biskupice_sss
+    name: "Biskupice SSS"
+    length_km: 2.3
+    surface: tarmac
 fr_puy_du_lac:
-  1012: puy_du_lac
+  name: "Puy du Lac"
+  country: "France"
+  1012:
+    id: puy_du_lac
+    name: "Puy du Lac"
+    length_km: 5
+    surface: tarmac
 gb_gb_sprint_extreme:
-  1024: gb_sprint_extreme
+  name: "GB Sprint Extreme"
+  country: "Great Britain"
+  1024:
+    id: gb_sprint_extreme
+    name: "GB Sprint Extreme"
+    length_km: 6.7
+    surface: gravel
 pl_fso_zeran_warsaw:
-  1025: fso_zeran_warsaw
+  name: "FSO Zeran - Warsaw"
+  country: "Poland"
+  1025:
+    id: fso_zeran_warsaw
+    name: "FSO Zeran - Warsaw"
+    length_km: 7.1
+    surface: tarmac
 cz_olsava_2010:
-  1101: olsava_2010
+  name: "Olsava 2010"
+  country: "Czech Republic"
+  1101:
+    id: olsava_2010
+    name: "Olsava 2010"
+    length_km: 1.6
+    surface: tarmac
 cz_olsava_long:
-  1103: olsava_long
+  name: "Olsava long"
+  country: "Czech Republic"
+  1103:
+    id: olsava_long
+    name: "Olsava long"
+    length_km: 3.1
+    surface: tarmac
 cz_slusovice_rs:
-  1104: slusovice_rs
+  name: "Slusovice RS"
+  country: "Czech Republic"
+  1104:
+    id: slusovice_rs
+    name: "Slusovice RS"
+    length_km: 1.2
+    surface: tarmac
 cz_komarov_rs:
-  1105: komarov_rs
+  name: "Komarov RS"
+  country: "Czech Republic"
+  1105:
+    id: komarov_rs
+    name: "Komarov RS"
+    length_km: 3.2
+    surface: tarmac
 cz_horazdovice_komusin:
-  1106: horazdovice_komusin
+  name: "Horazdovice - Komusin"
+  country: "Czech Republic"
+  1106:
+    id: horazdovice_komusin
+    name: "Horazdovice - Komusin"
+    length_km: 4.9
+    surface: tarmac
 cz_komusin_horazdovice:
-  1107: komusin_horazdovice
+  name: "Komusin - Horazdovice"
+  country: "Czech Republic"
+  1107:
+    id: komusin_horazdovice
+    name: "Komusin - Horazdovice"
+    length_km: 4.1
+    surface: tarmac
 fr_snow_cote_darbroz:
-  1141: snow_cote_darbroz
-  1146: snow_cote_darbroz_ii
+  name: "Snow Cote D'Arbroz"
+  country: "France"
+  1141:
+    id: snow_cote_darbroz
+    name: "Snow Cote D'Arbroz"
+    length_km: 4.5
+    surface: snow
+  1146:
+    id: snow_cote_darbroz_ii
+    name: "Snow Cote D'Arbroz II"
+    length_km: 4.5
+    surface: snow
 fr_snow_joux_verte:
-  1142: snow_joux_verte
-  1145: snow_joux_verte_ii
+  name: "Snow Joux Verte"
+  country: "France"
+  1142:
+    id: snow_joux_verte
+    name: "Snow Joux Verte"
+    length_km: 7.9
+    surface: snow
+  1145:
+    id: snow_joux_verte_ii
+    name: "Snow Joux Verte II"
+    length_km: 7.9
+    surface: snow
 fr_snow_bisanne:
-  1143: snow_bisanne
-  1147: snow_bisanne_ii
+  name: "Snow Bisanne"
+  country: "France"
+  1143:
+    id: snow_bisanne
+    name: "Snow Bisanne"
+    length_km: 5.6
+    surface: snow
+  1147:
+    id: snow_bisanne_ii
+    name: "Snow Bisanne II"
+    length_km: 5.6
+    surface: snow
 fr_snow_joux_plane:
-  1144: snow_joux_plane
-  1148: snow_joux_plane_ii
+  name: "Snow Joux Plane"
+  country: "France"
+  1144:
+    id: snow_joux_plane
+    name: "Snow Joux Plane"
+    length_km: 11.1
+    surface: snow
+  1148:
+    id: snow_joux_plane_ii
+    name: "Snow Joux Plane II"
+    length_km: 11.1
+    surface: snow
 it_valstagna:
-  1302: valstagna
-  1301: valstagna_reverse
+  name: "Valstagna"
+  country: "Italy"
+  1302:
+    id: valstagna
+    name: "Valstagna"
+    length_km: 12.8
+    surface: tarmac
+  1301:
+    id: valstagna_reverse
+    name: "Valstagna Reverse"
+    length_km: 12.8
+    surface: tarmac
 it_valstagna_historic_gravel:
-  1303: valstagna_historic_gravel
+  name: "VALSTAGNA - Historic gravel"
+  country: "Italy"
+  1303:
+    id: valstagna_historic_gravel
+    name: "VALSTAGNA - Historic gravel"
+    length_km: 6.5
+    surface: gravel
 gb_sherwood_forest_i:
-  1521: sherwood_forest_i
-  1522: sherwood_forest_ii
+  name: "Sherwood Forest I"
+  country: "Great Britain"
+  1521:
+    id: sherwood_forest_i
+    name: "Sherwood Forest I"
+    length_km: 13.5
+    surface: gravel
+  1522:
+    id: sherwood_forest_ii
+    name: "Sherwood Forest II"
+    length_km: 13.5
+    surface: gravel
 gb_sherwood_forest_i_summer:
-  1523: sherwood_forest_i_summer
+  name: "Sherwood Forest I Summer"
+  country: "Great Britain"
+  1523:
+    id: sherwood_forest_i_summer
+    name: "Sherwood Forest I Summer"
+    length_km: 13.5
+    surface: gravel
 gb_sherwood_forest_ii_summer:
-  1524: sherwood_forest_ii_summer
+  name: "Sherwood Forest II Summer"
+  country: "Great Britain"
+  1524:
+    id: sherwood_forest_ii_summer
+    name: "Sherwood Forest II Summer"
+    length_km: 13.5
+    surface: gravel
 se_vargassence:
-  1655: vargassence
+  name: "Vargassence"
+  country: "Sweden"
+  1655:
+    id: vargassence
+    name: "Vargassence"
+    length_km: 14.7
+    surface: snow
 se_vargassence_mirror_reverse:
-  1656: vargassence_mirror_reverse
+  name: "Vargassence Mirror-Reverse"
+  country: "Sweden"
+  1656:
+    id: vargassence_mirror_reverse
+    name: "Vargassence Mirror-Reverse"
+    length_km: 14.8
+    surface: snow
 fr_courcelles_vald_esnoms:
-  1899: courcelles_vald_esnoms
+  name: "Courcelles Val'd Esnoms"
+  country: "France"
+  1899:
+    id: courcelles_vald_esnoms
+    name: "Courcelles Val'd Esnoms"
+    length_km: 9.9
+    surface: tarmac
 fr_vieux_moulin_perrancey:
-  1900: vieux_moulin_perrancey
+  name: "Vieux Moulin-Perrancey"
+  country: "France"
+  1900:
+    id: vieux_moulin_perrancey
+    name: "Vieux Moulin-Perrancey"
+    length_km: 20.5
+    surface: gravel
 at_mitterbach:
-  1914: mitterbach
+  name: "Mitterbach"
+  country: "Austria"
+  1914:
+    id: mitterbach
+    name: "Mitterbach"
+    length_km: 2.7
+    surface: snow
 at_mitterbach_tarmac:
-  1916: mitterbach_tarmac
+  name: "Mitterbach Tarmac"
+  country: "Austria"
+  1916:
+    id: mitterbach_tarmac
+    name: "Mitterbach Tarmac"
+    length_km: 2.7
+    surface: tarmac
 es_vicar:
-  1996: vicar
+  name: "Vicar"
+  country: "Spain"
+  1996:
+    id: vicar
+    name: "Vicar"
+    length_km: 4.7
+    surface: tarmac
 cz_halenkovice_sd:
-  1999: halenkovice_sd
+  name: "Halenkovice SD"
+  country: "Czech Republic"
+  1999:
+    id: halenkovice_sd
+    name: "Halenkovice SD"
+    length_km: 4.2
+    surface: tarmac
 cz_zlin_ss1:
-  3001: zlin_ss1
+  name: "Zlin SS1"
+  country: "Czech Republic"
+  3001:
+    id: zlin_ss1
+    name: "Zlin SS1"
+    length_km: 9.6
+    surface: tarmac
 sm_the_legend:
-  4545: the_legend
+  name: "The Legend"
+  country: "San Marino"
+  4545:
+    id: the_legend
+    name: "The Legend"
+    length_km: 4.3
+    surface: tarmac
 xx_test_track_5025:
-  5025: test_track_5025
+  name: "Test Track 5025"
+  country: "Neverwhere"
+  5025:
+    id: test_track_5025
+    name: "Test Track 5025"
+    length_km: 6.5
+    surface: tarmac
 nz_manukau_sss:
-  8994: manukau_sss
+  name: "Manukau SSS"
+  country: "New Zealand"
+  8994:
+    id: manukau_sss
+    name: "Manukau SSS"
+    length_km: 2
+    surface: gravel
 es_legazpi_gabiria_2004:
-  9876: legazpi_gabiria_2004
+  name: "Legazpi-Gabiria 2004"
+  country: "Spain"
+  9876:
+    id: legazpi_gabiria_2004
+    name: "Legazpi-Gabiria 2004"
+    length_km: 6.5
+    surface: tarmac
 es_gabiria_legazpi_2004:
-  9877: gabiria_legazpi_2004
+  name: "Gabiria-Legazpi 2004"
+  country: "Spain"
+  9877:
+    id: gabiria_legazpi_2004
+    name: "Gabiria-Legazpi 2004"
+    length_km: 6.5
+    surface: tarmac
 es_legazpi_gabiria_winter:
-  9878: legazpi_gabiria_winter
+  name: "Legazpi-Gabiria Winter"
+  country: "Spain"
+  9878:
+    id: legazpi_gabiria_winter
+    name: "Legazpi-Gabiria Winter"
+    length_km: 6.5
+    surface: tarmac
