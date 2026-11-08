@@ -1,345 +1,594 @@
-# RBR map number: W-Rally track id (<country>_<stage name>) - tools/rbr-tracks/make_table.py
-10: fi_kaihuavaara
-11: fi_mustaselka
-12: fi_sikakama
-13: fi_autiovaara
-14: fi_kaihuavaara_ii
-15: fi_mustaselka_ii
-16: fi_sikakama_ii
-17: fi_autiovaara_ii
-20: gb_harwood_forest
-21: gb_falstone
-22: gb_chirdonhead
-23: gb_shepherds_shield
-24: gb_harwood_forest_ii
-25: gb_chirdonhead_ii
-26: gb_falstone_ii
-27: gb_shepherds_shield_ii
-30: au_greenhills_ii
-31: au_new_bobs
-32: au_greenhills
-33: au_mineshaft
-34: au_east_west
-35: au_new_bobs_ii
-36: au_east_west_ii
-37: au_mineshaft_ii
-41: fr_cote_darbroz
-42: fr_joux_verte
-43: fr_bisanne
-44: fr_joux_plane
-45: fr_joux_verte_ii
-46: fr_cote_darbroz_ii
-47: fr_bisanne_ii
-48: fr_joux_plane_ii
-50: jp_sipirkakim_ii
-51: jp_noiker
-52: jp_sipirkakim
-53: jp_pirka_menoko
-54: jp_tanner
-55: jp_noiker_ii
-56: jp_tanner_ii
-57: jp_pirka_menoko_ii
-60: us_fraizer_wells_ii
-61: us_fraizer_wells
-62: us_prospect_ridge
-63: us_diamond_creek
-64: us_hualapai_nation
-65: us_prospect_ridge_ii
-66: us_diamond_creek_ii
-67: us_hualapai_nation_ii
-70: us_prospect_ridge_ii_a
-71: xx_rally_school_stage
-90: xx_rally_school_stage_ii
-94: cz_stryckovy_okruh
-95: cz_sumburk_2007
-96: cz_sosnova
-99: cz_zadverice
-100: cz_vinec_skalsko
-101: cz_vinec_skalsko_night
-102: cz_skalsko_vinec
-103: cz_zadverice_ii
-105: cz_sosnova_2010
-106: cz_stryckovy_zadni_porici
-107: nl_ptd_rallysprint
-108: cz_osli_stryckovy
-109: cz_dostihovka
-110: cz_dostihovka_final_stage
-111: cz_komarov
-112: cz_komarov_ii
-113: cz_komarov_snow
-114: cz_komarov_ii_snow
-116: cz_koprivnice_1
-117: cz_koprivnice_2
-118: cz_koprivnice_3
-119: cz_koprivnice_4
-121: cz_fagus_lipa
-122: cz_kamenak
-123: cz_kamenak_ii
-125: de_bergheim
-126: cz_rz_banov
-127: cz_rz_banov_ii
-128: cz_rz_banov_okruh
-129: cz_rz_barak
-130: cz_rz_barak_snow
-131: fr_lyon_gerland
-132: nl_gestel
-133: cz_rx_kart_ring_1
-134: cz_rx_kart_ring_2
-135: cz_night_prolog
-136: cz_nove_hory_dolina
-137: cz_dolina_polookruh
-138: cz_koudelky_psinky
-139: ie_rsi_slalom_shonen
-140: ie_rsi_slalom_gegewrc
-141: sk_mlynky
-142: sk_mlynky_snow
-143: sk_peklo
-144: sk_peklo_snow
-145: lt_versme
-146: sk_peklo_ii
-147: sk_peklo_ii_snow
-148: gb_roc_2008
-149: de_sieversdorf
-150: cz_bunc_2024
-151: cz_bunc_2025
-152: pl_rp_2009_shakedown
-153: pl_rp_2009_shakedown_reversed
-154: de_bruchsal_unteroewisheim
-155: fi_humalamaki
-156: sk_mlynky_ii
-157: es_grand_canaria_roc_2000
-158: gb_sweet_lamb
-159: gb_sweet_lamb_ii
-160: cz_odry
-161: cz_odry_ii
-162: cz_odry_snow
-163: cz_odry_snow_night
-164: cz_odry_ii_snow
-165: cz_odry_ii_snow_night
-166: cz_kamen
-170: cz_halenkovice_2018
-175: cz_vyskovec
-176: cz_vyskovec_okruh
-300: fi_saalahti
-411: cz_zaton
-413: cz_rozmital_96_ii
-414: cz_zaton_ii
-415: cz_rozmital_96
-426: cz_helfstyn
-429: es_era_del_cardon
-433: fi_harju_2019
-434: fr_alpes_rally
-449: cz_sss_valasske_mezirici
-451: es_la_atalaya
-452: es_la_atalaya_ii
-454: es_era_del_cardon_ii
-458: pl_rosciszow_walim
-459: pl_walim_rosciszow
-461: fr_sss_alpes_rally_school
-468: pl_ul_rajdowa
-469: pl_ul_rajdowa_r
-470: ee_narva_kreenholmi_rahvasprint_2022
-471: it_aragona
-472: it_muxarello
-476: cz_neubuz_slusovice
-478: es_rallysprint_hondarribia_2011
-479: jp_shomaru_pass
-480: jp_shomaru_pass_ii
-481: se_karlstad
-482: se_karlstad_ii
-484: fi_humalamaki_reversed
-485: se_torsby_shakedown
-486: pl_woliborz_jodlownik
-487: pl_jodlownik_woliborz
-488: xx_jirkovicky
-489: xx_jirkovicky_ii
-490: xx_sourkov
-491: xx_lernovec
-492: xx_uzkotin
-493: xx_hroudovany
-494: xx_snekovice
-495: xx_lernovec_ii
-496: xx_uzkotin_ii
-497: xx_hroudovany_ii
-498: xx_snekovice_ii
-499: xx_sourkov_ii
-516: cz_hradek_1
-517: cz_hradek_2
-518: cz_liptakov_1
-519: cz_liptakov_2
-522: cz_rally_school_czech
-524: cz_rally_school_czech_ii
-526: pl_kaczyce
-528: fi_kuadonvaara
-533: pl_karowa_2009
-534: fr_haugenau_2012
-535: fr_course_de_cote_de_cauterets
-536: fr_course_de_cote_de_cauterets_slalom
-544: ar_fernet_branca
-545: au_junior_wheels_i
-546: au_junior_wheels_ii
-550: fr_foron
-551: fr_foron_ii
-552: fr_foron_snow
-553: fr_foron_snow_ii
-555: fr_maton_i
-556: fr_maton_ii
-557: it_red_bull_hc
-558: fr_maton_snow
-559: fr_maton_snow_ii
-560: gb_loch_ard
-561: gb_loch_ard_ii
-563: br_passauna_i
-564: br_passauna_ii
-565: ee_undva_reversed
-566: ee_undva
-570: fr_peyregrosse_mandagout
-571: fr_peyregrosse_mandagout_night
-572: it_castrezzato
-573: it_ss_daniel_bonara
-574: si_sorica
-575: si_zelezniki_2014
-576: fr_peyre_winter
-582: cz_barum_rally_2009_semetin
-583: cz_barum_rally_2010_semetin
-585: ch_swiss_ii
-586: ch_swiss_i
-587: ch_swiss_iv
-589: ch_swiss_iii
-590: fr_blanare
-591: fr_blanare_ii
-592: sk_slovakia_ring_2014
-593: sk_slovakia_ring_2014_ii
-595: us_sardian
-596: us_sardian_night
-597: sk_mlynky_snow_ii
-598: us_pikes_peak_2008
-599: gb_northumbria
-601: gb_northumbria_tarmac
-602: fr_lescheraines_arith
-604: pl_witoszow_zloty_las
-605: pl_zloty_las_witoszow
-607: sk_sturec
-608: sk_sturec_ii
-609: sk_sturec_snow
-610: sk_sturec_snow_ii
-611: fr_capo_di_feno
-612: fr_capo_di_feno_ii
-613: sk_uhorna
-614: sk_uhorna_ii
-615: sk_uhorna_snow
-616: sk_uhorna_snow_ii
-676: hu_rabocsiring_2021_rally_hungary_ss1
-677: hu_rabocsiring_rx
-700: it_passo_valle
-701: it_passo_valle_reverse
-703: pt_lousada_wrc
-704: pt_lousada_rx
-705: pt_lousada_rg
-707: pt_carvalho_de_rei_2008_ii
-708: pt_carvalho_de_rei_2008
-709: pt_travanca_do_monte
-711: jp_akagi_mountain
-712: jp_akagi_mountain_ii
-720: lt_verkiai_2010
-721: lt_verkiai_2010_reverse
-723: lt_verkiai_2010_sss
-725: se_torsby_2018
-726: se_torsby_2018_sprint
-755: it_dolmen
-777: it_pian_del_colle
-778: it_pian_del_colle_reversed
-779: it_pian_del_colle_snow
-780: it_pian_del_colle_snow_reversed
-787: es_el_fargue_ss1
-800: ua_ai_petri
-801: ua_uchan_su
-802: ua_ai_petri_winter
-803: ua_uchan_su_winter
-805: gb_wythop_i
-806: gb_wythop_ii
-810: ua_livadija
-811: ua_livadija_ii
-820: it_la_rocca
-830: ua_azov
-831: ua_azov_ii
-833: ua_shurdin_ii
-834: ua_shurdin_i
-841: fr_alsace
-848: fr_luceram_col_saint_roch
-886: lt_zaraso_salos_trekas_5_laps
-887: lt_zaraso_salos_trekas_2_laps
-888: it_shakedown_rally_del_salento_2014
-911: it_torre_vecchia
-929: cz_svince
-930: cz_svince_ii
-931: xx_rally_school_mix
-932: xx_rally_school_mix_ii
-933: xx_rally_school_tarmac
-934: xx_rally_school_tarmac_ii
-937: fi_hyppyrata_tarmac_ii
-938: fi_hyppyrata_tarmac
-969: it_tavia
-979: it_berica
-980: pl_rally_wisla_shakedown
-981: fi_hyppyjulma_gravel
-982: fi_hyppyjulma_gravel_ii
-983: fi_hyppyjulma_tarmac
-984: fi_hyppyjulma_tarmac_ii
-985: fi_kolmenjarvet_gravel
-986: fi_kolmenjarvet_gravel_ii
-987: fi_kolmenjarvet_tarmac
-988: fi_kolmenjarvet_tarmac_ii
-989: fi_joukkovaara_gravel
-990: fi_joukkovaara_gravel_ii
-991: fi_joukkovaara_tarmac
-992: fi_joukkovaara_tarmac_ii
-993: pl_kormoran_shakedown
-994: pl_kormoran_i
-995: pl_kormoran_ii
-996: pl_sss_mikolajki_i
-997: pl_sss_mikolajki_ii
-998: au_sss_york_i
-999: au_sss_york_ii
-1000: cz_biskupice_2004
-1001: cz_biskupice_2004_ii
-1002: cz_biskupice_sss
-1012: fr_puy_du_lac
-1024: gb_gb_sprint_extreme
-1025: pl_fso_zeran_warsaw
-1101: cz_olsava_2010
-1103: cz_olsava_long
-1104: cz_slusovice_rs
-1105: cz_komarov_rs
-1106: cz_horazdovice_komusin
-1107: cz_komusin_horazdovice
-1141: fr_snow_cote_darbroz
-1142: fr_snow_joux_verte
-1143: fr_snow_bisanne
-1144: fr_snow_joux_plane
-1145: fr_snow_joux_verte_ii
-1146: fr_snow_cote_darbroz_ii
-1147: fr_snow_bisanne_ii
-1148: fr_snow_joux_plane_ii
-1301: it_valstagna_reverse
-1302: it_valstagna
-1303: it_valstagna_historic_gravel
-1521: gb_sherwood_forest_i
-1522: gb_sherwood_forest_ii
-1523: gb_sherwood_forest_i_summer
-1524: gb_sherwood_forest_ii_summer
-1655: se_vargassence
-1656: se_vargassence_mirror_reverse
-1899: fr_courcelles_vald_esnoms
-1900: fr_vieux_moulin_perrancey
-1914: at_mitterbach
-1916: at_mitterbach_tarmac
-1996: es_vicar
-1999: cz_halenkovice_sd
-3001: cz_zlin_ss1
-4545: sm_the_legend
-5025: xx_test_track_5025
-8994: nz_manukau_sss
-9876: es_legazpi_gabiria_2004
-9877: es_gabiria_legazpi_2004
-9878: es_legazpi_gabiria_winter
+# W-Rally track id (<country>_<place>): its stages, RBR map number: stage id - tools/rbr-tracks/make_table.py
+# RBR's reversed stages are stages of the same track (docs/content-layers.md 3).
+fi_kaihuavaara:
+  10: kaihuavaara
+  14: kaihuavaara_ii
+fi_mustaselka:
+  11: mustaselka
+  15: mustaselka_ii
+fi_sikakama:
+  12: sikakama
+  16: sikakama_ii
+fi_autiovaara:
+  13: autiovaara
+  17: autiovaara_ii
+gb_harwood_forest:
+  20: harwood_forest
+  24: harwood_forest_ii
+gb_falstone:
+  21: falstone
+  26: falstone_ii
+gb_chirdonhead:
+  22: chirdonhead
+  25: chirdonhead_ii
+gb_shepherds_shield:
+  23: shepherds_shield
+  27: shepherds_shield_ii
+au_greenhills:
+  32: greenhills
+  30: greenhills_ii
+au_new_bobs:
+  31: new_bobs
+  35: new_bobs_ii
+au_mineshaft:
+  33: mineshaft
+  37: mineshaft_ii
+au_east_west:
+  34: east_west
+  36: east_west_ii
+fr_cote_darbroz:
+  41: cote_darbroz
+  46: cote_darbroz_ii
+fr_joux_verte:
+  42: joux_verte
+  45: joux_verte_ii
+fr_bisanne:
+  43: bisanne
+  47: bisanne_ii
+fr_joux_plane:
+  44: joux_plane
+  48: joux_plane_ii
+jp_sipirkakim:
+  52: sipirkakim
+  50: sipirkakim_ii
+jp_noiker:
+  51: noiker
+  55: noiker_ii
+jp_pirka_menoko:
+  53: pirka_menoko
+  57: pirka_menoko_ii
+jp_tanner:
+  54: tanner
+  56: tanner_ii
+us_fraizer_wells:
+  61: fraizer_wells
+  60: fraizer_wells_ii
+us_prospect_ridge:
+  62: prospect_ridge
+  65: prospect_ridge_ii
+  70: prospect_ridge_ii_a
+us_diamond_creek:
+  63: diamond_creek
+  66: diamond_creek_ii
+us_hualapai_nation:
+  64: hualapai_nation
+  67: hualapai_nation_ii
+xx_rally_school_stage:
+  71: rally_school_stage
+  90: rally_school_stage_ii
+cz_stryckovy_okruh:
+  94: stryckovy_okruh
+cz_sumburk_2007:
+  95: sumburk_2007
+cz_sosnova:
+  96: sosnova
+cz_zadverice:
+  99: zadverice
+  103: zadverice_ii
+cz_vinec_skalsko:
+  100: vinec_skalsko
+cz_vinec_skalsko_night:
+  101: vinec_skalsko_night
+cz_skalsko_vinec:
+  102: skalsko_vinec
+cz_sosnova_2010:
+  105: sosnova_2010
+cz_stryckovy_zadni_porici:
+  106: stryckovy_zadni_porici
+nl_ptd_rallysprint:
+  107: ptd_rallysprint
+cz_osli_stryckovy:
+  108: osli_stryckovy
+cz_dostihovka:
+  109: dostihovka
+cz_dostihovka_final_stage:
+  110: dostihovka_final_stage
+cz_komarov:
+  111: komarov
+  112: komarov_ii
+cz_komarov_snow:
+  113: komarov_snow
+cz_komarov_ii_snow:
+  114: komarov_ii_snow
+cz_koprivnice_1:
+  116: koprivnice_1
+cz_koprivnice_2:
+  117: koprivnice_2
+cz_koprivnice_3:
+  118: koprivnice_3
+cz_koprivnice_4:
+  119: koprivnice_4
+cz_fagus_lipa:
+  121: fagus_lipa
+cz_kamenak:
+  122: kamenak
+  123: kamenak_ii
+de_bergheim:
+  125: bergheim
+cz_rz_banov:
+  126: rz_banov
+  127: rz_banov_ii
+cz_rz_banov_okruh:
+  128: rz_banov_okruh
+cz_rz_barak:
+  129: rz_barak
+cz_rz_barak_snow:
+  130: rz_barak_snow
+fr_lyon_gerland:
+  131: lyon_gerland
+nl_gestel:
+  132: gestel
+cz_rx_kart_ring_1:
+  133: rx_kart_ring_1
+cz_rx_kart_ring_2:
+  134: rx_kart_ring_2
+cz_night_prolog:
+  135: night_prolog
+cz_nove_hory_dolina:
+  136: nove_hory_dolina
+cz_dolina_polookruh:
+  137: dolina_polookruh
+cz_koudelky_psinky:
+  138: koudelky_psinky
+ie_rsi_slalom_shonen:
+  139: rsi_slalom_shonen
+ie_rsi_slalom_gegewrc:
+  140: rsi_slalom_gegewrc
+sk_mlynky:
+  141: mlynky
+  156: mlynky_ii
+sk_mlynky_snow:
+  142: mlynky_snow
+  597: mlynky_snow_ii
+sk_peklo:
+  143: peklo
+  146: peklo_ii
+sk_peklo_snow:
+  144: peklo_snow
+lt_versme:
+  145: versme
+sk_peklo_ii_snow:
+  147: peklo_ii_snow
+gb_roc_2008:
+  148: roc_2008
+de_sieversdorf:
+  149: sieversdorf
+cz_bunc_2024:
+  150: bunc_2024
+cz_bunc_2025:
+  151: bunc_2025
+pl_rp_2009_shakedown:
+  152: rp_2009_shakedown
+  153: rp_2009_shakedown_reversed
+de_bruchsal_unteroewisheim:
+  154: bruchsal_unteroewisheim
+fi_humalamaki:
+  155: humalamaki
+  484: humalamaki_reversed
+es_grand_canaria_roc_2000:
+  157: grand_canaria_roc_2000
+gb_sweet_lamb:
+  158: sweet_lamb
+  159: sweet_lamb_ii
+cz_odry:
+  160: odry
+  161: odry_ii
+cz_odry_snow:
+  162: odry_snow
+cz_odry_snow_night:
+  163: odry_snow_night
+cz_odry_ii_snow:
+  164: odry_ii_snow
+cz_odry_ii_snow_night:
+  165: odry_ii_snow_night
+cz_kamen:
+  166: kamen
+cz_halenkovice_2018:
+  170: halenkovice_2018
+cz_vyskovec:
+  175: vyskovec
+cz_vyskovec_okruh:
+  176: vyskovec_okruh
+fi_saalahti:
+  300: saalahti
+cz_zaton:
+  411: zaton
+  414: zaton_ii
+cz_rozmital_96:
+  415: rozmital_96
+  413: rozmital_96_ii
+cz_helfstyn:
+  426: helfstyn
+es_era_del_cardon:
+  429: era_del_cardon
+  454: era_del_cardon_ii
+fi_harju_2019:
+  433: harju_2019
+fr_alpes_rally:
+  434: alpes_rally
+cz_sss_valasske_mezirici:
+  449: sss_valasske_mezirici
+es_la_atalaya:
+  451: la_atalaya
+  452: la_atalaya_ii
+pl_rosciszow_walim:
+  458: rosciszow_walim
+pl_walim_rosciszow:
+  459: walim_rosciszow
+fr_sss_alpes_rally_school:
+  461: sss_alpes_rally_school
+pl_ul_rajdowa:
+  468: ul_rajdowa
+pl_ul_rajdowa_r:
+  469: ul_rajdowa_r
+ee_narva_kreenholmi_rahvasprint_2022:
+  470: narva_kreenholmi_rahvasprint_2022
+it_aragona:
+  471: aragona
+it_muxarello:
+  472: muxarello
+cz_neubuz_slusovice:
+  476: neubuz_slusovice
+es_rallysprint_hondarribia_2011:
+  478: rallysprint_hondarribia_2011
+jp_shomaru_pass:
+  479: shomaru_pass
+  480: shomaru_pass_ii
+se_karlstad:
+  481: karlstad
+  482: karlstad_ii
+se_torsby_shakedown:
+  485: torsby_shakedown
+pl_woliborz_jodlownik:
+  486: woliborz_jodlownik
+pl_jodlownik_woliborz:
+  487: jodlownik_woliborz
+xx_jirkovicky:
+  488: jirkovicky
+  489: jirkovicky_ii
+xx_sourkov:
+  490: sourkov
+  499: sourkov_ii
+xx_lernovec:
+  491: lernovec
+  495: lernovec_ii
+xx_uzkotin:
+  492: uzkotin
+  496: uzkotin_ii
+xx_hroudovany:
+  493: hroudovany
+  497: hroudovany_ii
+xx_snekovice:
+  494: snekovice
+  498: snekovice_ii
+cz_hradek_1:
+  516: hradek_1
+cz_hradek_2:
+  517: hradek_2
+cz_liptakov_1:
+  518: liptakov_1
+cz_liptakov_2:
+  519: liptakov_2
+cz_rally_school_czech:
+  522: rally_school_czech
+  524: rally_school_czech_ii
+pl_kaczyce:
+  526: kaczyce
+fi_kuadonvaara:
+  528: kuadonvaara
+pl_karowa_2009:
+  533: karowa_2009
+fr_haugenau_2012:
+  534: haugenau_2012
+fr_course_de_cote_de_cauterets:
+  535: course_de_cote_de_cauterets
+fr_course_de_cote_de_cauterets_slalom:
+  536: course_de_cote_de_cauterets_slalom
+ar_fernet_branca:
+  544: fernet_branca
+au_junior_wheels_i:
+  545: junior_wheels_i
+  546: junior_wheels_ii
+fr_foron:
+  550: foron
+  551: foron_ii
+fr_foron_snow:
+  552: foron_snow
+  553: foron_snow_ii
+fr_maton_i:
+  555: maton_i
+  556: maton_ii
+it_red_bull_hc:
+  557: red_bull_hc
+fr_maton_snow:
+  558: maton_snow
+  559: maton_snow_ii
+gb_loch_ard:
+  560: loch_ard
+  561: loch_ard_ii
+br_passauna_i:
+  563: passauna_i
+  564: passauna_ii
+ee_undva:
+  566: undva
+  565: undva_reversed
+fr_peyregrosse_mandagout:
+  570: peyregrosse_mandagout
+fr_peyregrosse_mandagout_night:
+  571: peyregrosse_mandagout_night
+it_castrezzato:
+  572: castrezzato
+it_ss_daniel_bonara:
+  573: ss_daniel_bonara
+si_sorica:
+  574: sorica
+si_zelezniki_2014:
+  575: zelezniki_2014
+fr_peyre_winter:
+  576: peyre_winter
+cz_barum_rally_2009_semetin:
+  582: barum_rally_2009_semetin
+cz_barum_rally_2010_semetin:
+  583: barum_rally_2010_semetin
+ch_swiss_i:
+  586: swiss_i
+  585: swiss_ii
+ch_swiss_iv:
+  587: swiss_iv
+ch_swiss_iii:
+  589: swiss_iii
+fr_blanare:
+  590: blanare
+  591: blanare_ii
+sk_slovakia_ring_2014:
+  592: slovakia_ring_2014
+  593: slovakia_ring_2014_ii
+us_sardian:
+  595: sardian
+us_sardian_night:
+  596: sardian_night
+us_pikes_peak_2008:
+  598: pikes_peak_2008
+gb_northumbria:
+  599: northumbria
+gb_northumbria_tarmac:
+  601: northumbria_tarmac
+fr_lescheraines_arith:
+  602: lescheraines_arith
+pl_witoszow_zloty_las:
+  604: witoszow_zloty_las
+pl_zloty_las_witoszow:
+  605: zloty_las_witoszow
+sk_sturec:
+  607: sturec
+  608: sturec_ii
+sk_sturec_snow:
+  609: sturec_snow
+  610: sturec_snow_ii
+fr_capo_di_feno:
+  611: capo_di_feno
+  612: capo_di_feno_ii
+sk_uhorna:
+  613: uhorna
+  614: uhorna_ii
+sk_uhorna_snow:
+  615: uhorna_snow
+  616: uhorna_snow_ii
+hu_rabocsiring_2021_rally_hungary_ss1:
+  676: rabocsiring_2021_rally_hungary_ss1
+hu_rabocsiring_rx:
+  677: rabocsiring_rx
+it_passo_valle:
+  700: passo_valle
+  701: passo_valle_reverse
+pt_lousada_wrc:
+  703: lousada_wrc
+pt_lousada_rx:
+  704: lousada_rx
+pt_lousada_rg:
+  705: lousada_rg
+pt_carvalho_de_rei_2008:
+  708: carvalho_de_rei_2008
+  707: carvalho_de_rei_2008_ii
+pt_travanca_do_monte:
+  709: travanca_do_monte
+jp_akagi_mountain:
+  711: akagi_mountain
+  712: akagi_mountain_ii
+lt_verkiai_2010:
+  720: verkiai_2010
+  721: verkiai_2010_reverse
+lt_verkiai_2010_sss:
+  723: verkiai_2010_sss
+se_torsby_2018:
+  725: torsby_2018
+se_torsby_2018_sprint:
+  726: torsby_2018_sprint
+it_dolmen:
+  755: dolmen
+it_pian_del_colle:
+  777: pian_del_colle
+  778: pian_del_colle_reversed
+it_pian_del_colle_snow:
+  779: pian_del_colle_snow
+  780: pian_del_colle_snow_reversed
+es_el_fargue_ss1:
+  787: el_fargue_ss1
+ua_ai_petri:
+  800: ai_petri
+ua_uchan_su:
+  801: uchan_su
+ua_ai_petri_winter:
+  802: ai_petri_winter
+ua_uchan_su_winter:
+  803: uchan_su_winter
+gb_wythop_i:
+  805: wythop_i
+  806: wythop_ii
+ua_livadija:
+  810: livadija
+  811: livadija_ii
+it_la_rocca:
+  820: la_rocca
+ua_azov:
+  830: azov
+  831: azov_ii
+ua_shurdin_i:
+  834: shurdin_i
+  833: shurdin_ii
+fr_alsace:
+  841: alsace
+fr_luceram_col_saint_roch:
+  848: luceram_col_saint_roch
+lt_zaraso_salos_trekas_5_laps:
+  886: zaraso_salos_trekas_5_laps
+lt_zaraso_salos_trekas_2_laps:
+  887: zaraso_salos_trekas_2_laps
+it_shakedown_rally_del_salento_2014:
+  888: shakedown_rally_del_salento_2014
+it_torre_vecchia:
+  911: torre_vecchia
+cz_svince:
+  929: svince
+  930: svince_ii
+xx_rally_school_mix:
+  931: rally_school_mix
+  932: rally_school_mix_ii
+xx_rally_school_tarmac:
+  933: rally_school_tarmac
+  934: rally_school_tarmac_ii
+fi_hyppyrata_tarmac:
+  938: hyppyrata_tarmac
+  937: hyppyrata_tarmac_ii
+it_tavia:
+  969: tavia
+it_berica:
+  979: berica
+pl_rally_wisla_shakedown:
+  980: rally_wisla_shakedown
+fi_hyppyjulma_gravel:
+  981: hyppyjulma_gravel
+  982: hyppyjulma_gravel_ii
+fi_hyppyjulma_tarmac:
+  983: hyppyjulma_tarmac
+  984: hyppyjulma_tarmac_ii
+fi_kolmenjarvet_gravel:
+  985: kolmenjarvet_gravel
+  986: kolmenjarvet_gravel_ii
+fi_kolmenjarvet_tarmac:
+  987: kolmenjarvet_tarmac
+  988: kolmenjarvet_tarmac_ii
+fi_joukkovaara_gravel:
+  989: joukkovaara_gravel
+  990: joukkovaara_gravel_ii
+fi_joukkovaara_tarmac:
+  991: joukkovaara_tarmac
+  992: joukkovaara_tarmac_ii
+pl_kormoran_shakedown:
+  993: kormoran_shakedown
+pl_kormoran_i:
+  994: kormoran_i
+  995: kormoran_ii
+pl_sss_mikolajki_i:
+  996: sss_mikolajki_i
+  997: sss_mikolajki_ii
+au_sss_york_i:
+  998: sss_york_i
+  999: sss_york_ii
+cz_biskupice_2004:
+  1000: biskupice_2004
+  1001: biskupice_2004_ii
+cz_biskupice_sss:
+  1002: biskupice_sss
+fr_puy_du_lac:
+  1012: puy_du_lac
+gb_gb_sprint_extreme:
+  1024: gb_sprint_extreme
+pl_fso_zeran_warsaw:
+  1025: fso_zeran_warsaw
+cz_olsava_2010:
+  1101: olsava_2010
+cz_olsava_long:
+  1103: olsava_long
+cz_slusovice_rs:
+  1104: slusovice_rs
+cz_komarov_rs:
+  1105: komarov_rs
+cz_horazdovice_komusin:
+  1106: horazdovice_komusin
+cz_komusin_horazdovice:
+  1107: komusin_horazdovice
+fr_snow_cote_darbroz:
+  1141: snow_cote_darbroz
+  1146: snow_cote_darbroz_ii
+fr_snow_joux_verte:
+  1142: snow_joux_verte
+  1145: snow_joux_verte_ii
+fr_snow_bisanne:
+  1143: snow_bisanne
+  1147: snow_bisanne_ii
+fr_snow_joux_plane:
+  1144: snow_joux_plane
+  1148: snow_joux_plane_ii
+it_valstagna:
+  1302: valstagna
+  1301: valstagna_reverse
+it_valstagna_historic_gravel:
+  1303: valstagna_historic_gravel
+gb_sherwood_forest_i:
+  1521: sherwood_forest_i
+  1522: sherwood_forest_ii
+gb_sherwood_forest_i_summer:
+  1523: sherwood_forest_i_summer
+gb_sherwood_forest_ii_summer:
+  1524: sherwood_forest_ii_summer
+se_vargassence:
+  1655: vargassence
+se_vargassence_mirror_reverse:
+  1656: vargassence_mirror_reverse
+fr_courcelles_vald_esnoms:
+  1899: courcelles_vald_esnoms
+fr_vieux_moulin_perrancey:
+  1900: vieux_moulin_perrancey
+at_mitterbach:
+  1914: mitterbach
+at_mitterbach_tarmac:
+  1916: mitterbach_tarmac
+es_vicar:
+  1996: vicar
+cz_halenkovice_sd:
+  1999: halenkovice_sd
+cz_zlin_ss1:
+  3001: zlin_ss1
+sm_the_legend:
+  4545: the_legend
+xx_test_track_5025:
+  5025: test_track_5025
+nz_manukau_sss:
+  8994: manukau_sss
+es_legazpi_gabiria_2004:
+  9876: legazpi_gabiria_2004
+es_gabiria_legazpi_2004:
+  9877: gabiria_legazpi_2004
+es_legazpi_gabiria_winter:
+  9878: legazpi_gabiria_winter
